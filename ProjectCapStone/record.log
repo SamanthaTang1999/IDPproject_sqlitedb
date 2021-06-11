@@ -1828,3 +1828,9 @@ INFO: Connected to mySQL database
 Jun 11, 2021 12:12:37 PM common.Log logFile
 INFO: Connected to SQLite database
 
+Jun 11, 2021 3:14:37 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 3:14:44 PM common.Log logFile
+INFO: Voon log in successfully.
+
