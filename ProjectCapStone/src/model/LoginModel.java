@@ -1,13 +1,9 @@
 package model;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 import common.Log;
-import common.MySqlConnection;
-import common.ReadConfig;
+import common.SqliteConnection;
 
 public class LoginModel {
 	
@@ -15,10 +11,8 @@ public class LoginModel {
 	public Log log = new Log();
 	
 	public LoginModel() {	
-		
-		ReadConfig readConfig = new ReadConfig();
 	
-		connection = MySqlConnection.Connector(readConfig.getUrl(), readConfig.getUser(), readConfig.getPassword());
+		connection = SqliteConnection.Connector();
 		if (connection == null) {
 			log.logFile(null, "severe", "VetNavigate unable to connect to SQL");
 			//System.exit(1);

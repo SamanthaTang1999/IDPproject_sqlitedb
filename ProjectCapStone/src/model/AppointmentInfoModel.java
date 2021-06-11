@@ -1,14 +1,10 @@
 package model;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 import common.AppointmentInfo;
 import common.Log;
-import common.MySqlConnection;
-import common.ReadConfig;
+import common.SqliteConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -19,9 +15,7 @@ public class AppointmentInfoModel {
 		
 		public AppointmentInfoModel() {
 		
-			ReadConfig readConfig = new ReadConfig();
-		
-			connection = MySqlConnection.Connector(readConfig.getUrl(), readConfig.getUser(), readConfig.getPassword());
+			connection = SqliteConnection.Connector();
 			if (connection == null) {
 				log.logFile(null, "severe", "SQL connection is NULL.");
 				System.exit(1);

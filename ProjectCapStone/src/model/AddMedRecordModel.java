@@ -1,12 +1,9 @@
 package model;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 import common.Log;
-import common.MySqlConnection;
-import common.ReadConfig;
+import common.SqliteConnection;
 
 
 public class AddMedRecordModel {
@@ -16,9 +13,7 @@ public class AddMedRecordModel {
 		
 		public AddMedRecordModel() {
 		
-			ReadConfig readConfig = new ReadConfig();
-		
-			connection = MySqlConnection.Connector(readConfig.getUrl(), readConfig.getUser(), readConfig.getPassword());
+			connection = SqliteConnection.Connector();
 			if (connection == null) {
 				log.logFile(null, "severe", "SQL connection is NULL.");
 				System.exit(1);

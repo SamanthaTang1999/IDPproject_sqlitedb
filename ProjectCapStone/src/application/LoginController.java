@@ -34,12 +34,12 @@ public class LoginController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		if (loginModel.isDbConnected()) {
 			
-			log.logFile(null, "info", "Connected to mySQL database");
+			log.logFile(null, "info", "Connected to SQLite database");
 		
 		}
 		else {
 			
-			log.logFile(null, "warning", "Not connected to mySQL database");
+			log.logFile(null, "warning", "Not connected to SQLite database");
 		}
 		
 	}
