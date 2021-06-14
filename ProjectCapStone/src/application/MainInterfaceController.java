@@ -2,15 +2,19 @@ package application;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
-
 import common.Log;
 import common.MedicationRecord;
 import common.Owner;
 import common.Pet;
 import common.VaccineRecord;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -20,15 +24,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
@@ -36,17 +45,22 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Callback;
+import model.AddEditPetModel;
+import model.AddVacRecordModel;
 import model.MainInterfaceModel;
 
 public class MainInterfaceController implements Initializable {
 	
 	// My Dash board tab
-	@FXML private Label label_welcomeUser;
 	@FXML private TabPane tabPane;
 	@FXML private Tab myDashBoard;
 	@FXML private Tab petOwner;
 	@FXML private Tab petInfo;
 	@FXML private Tab calender;
+	@FXML private Tab user;
+	@FXML private Tab database;
+	@FXML private Tab statistics;
 	
 	
 	// Pet Owner Tab
@@ -94,9 +108,44 @@ public class MainInterfaceController implements Initializable {
 	@FXML Pane calendarPane;
 	@FXML ListView<String> appointmentListView;
 	
+	// User Tab
+	@FXML private Label label_userName;
+	@FXML private TextField tf_newUser;
+	@FXML private PasswordField pf_oldPF;
+	@FXML private PasswordField pf_editPF;
+	@FXML private PasswordField pf_newPF;
+	@FXML private PasswordField pf_confirmPF;
+	@FXML private ListView<String> listView_users;
+
+	// Database Tab
+	@FXML private TextField tf_newEntry;
+	@FXML private Label	label_listName;
+	@FXML private ListView<String> listView_database;
+	@FXML private RadioButton rb_catVaccine;
+	@FXML private RadioButton rb_dogVaccine;
+	@FXML private RadioButton rb_catBreed;
+	@FXML private RadioButton rb_dogBreed;
+	@FXML private Button button_viewAllOwners;
+	@FXML private Button button_viewAllPets;
+	@FXML private TableView tb_database;
+	
+	private ObservableList<ObservableList> database_data;
+	 
+	 // Statistics Tab
+	 
+	 private ObservableList piechart_data;
+	 
+	 @FXML private PieChart pieChart;
+	 @FXML private Label label_pieChartNumber;
+	
+	
+	
+
 	
 	// Main Interface Model
 	public MainInterfaceModel model = new MainInterfaceModel();
+	public AddVacRecordModel model_VacRecord = new AddVacRecordModel();
+	public AddEditPetModel model_breed = new AddEditPetModel();
 	
 	// System log
 	public Log log = new Log();
@@ -107,19 +156,20 @@ public class MainInterfaceController implements Initializable {
 		  tabPane.getTabs().remove( petInfo );
 		  tabPane.getTabs().remove( petOwner );
 		  tabPane.getTabs().remove( calender );
+		  tabPane.getTabs().remove( user );
+		  tabPane.getTabs().remove( database );
+		  tabPane.getTabs().remove( statistics );
 		  
-		   
 	}
 	
 /////////////////////////////////////////////// MY DASHBOARD TAB ////////////////////////////////////////////////	
 	
 	// Get current user in My dash board tab
 	
-	public void getUser(String user) {
-		label_welcomeUser.setText("Current User : " + user);
+	public void getUser(String user) throws SQLException {
+		label_userName.setText("Current User : " + user); 	// set username labal in user profile tab
 	}
 	
-	// Log out current user in My dash board tab
 	
 	public void logout(ActionEvent event) {
 		
@@ -149,16 +199,14 @@ public class MainInterfaceController implements Initializable {
 	
 
 	
-// Opens Calender Tab
 	public void goToCalender(ActionEvent event) {
 		
 		 if(!tabPane.getTabs().contains(calender)) {
 			 
 			   tabPane.getTabs().add(calender);  
-			   tabPane.getSelectionModel().select(calender);
 			   appointmentListView.setItems(null);
-			   
 			  }
+		 
 		 tabPane.getSelectionModel().select(calender);
 		 refreshAppointmentList(event);
 		
@@ -172,7 +220,6 @@ public class MainInterfaceController implements Initializable {
 		 if(!tabPane.getTabs().contains(petOwner)) {
 			 
 			   tabPane.getTabs().add(petOwner);  
-			   tabPane.getSelectionModel().select(petOwner);
 			   petTable.setItems(null);
 			   textField_ownerFirstName.clear();
 			   textField_ownerLastName.clear();
@@ -182,18 +229,81 @@ public class MainInterfaceController implements Initializable {
 			   textField_ownerEmail.clear();
 			   
 			  }
+		 
 		 tabPane.getSelectionModel().select(petOwner);
 		
+	}
+	
+	public void goToUser(ActionEvent event) throws SQLException 
+	{
+		if(!tabPane.getTabs().contains(user)) {
+			 
+			   tabPane.getTabs().add(user);  
+			  }
+		 tabPane.getSelectionModel().select(user);
+		 viewAllUsers(event);
+	}
 	
 	
+	public void goToSettings(ActionEvent event) 
+	{
+		String userName = label_userName.getText().substring(15);
+		if (userName.equals("admin")) {
+			
+			if(!tabPane.getTabs().contains(database)) {
+				 
+				   tabPane.getTabs().add(database);  
+				   
+				  }
+			 tabPane.getSelectionModel().select(database);
+		}
+		
+		else {
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("Program says");
+			alert.setHeaderText("Access Denied");
+			alert.setContentText("Only admin can access to database.");
+			alert.show();
+		}
 		
 	}
+	
+	public void goToStatistics(ActionEvent event) 
+	{
+		if(!tabPane.getTabs().contains(statistics)) { 
+			   tabPane.getTabs().add(statistics);   
+			  }
+		 tabPane.getSelectionModel().select(statistics);
+		 pieChart.getData().clear();
+		 buildPieChart();
+		
+		 if (!pieChart.getData().containsAll(piechart_data)) {
+			 pieChart.getData().addAll(piechart_data); 
+		}
+		 
+		 if (pieChart.getData().isEmpty()) {
+			label_pieChartNumber.setText("No data is available.");
+		}
+
+			for (final PieChart.Data data: pieChart.getData()) {
+				data.getNode().addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+					@Override
+					public void handle(MouseEvent event) {
+						label_pieChartNumber.setText(data.getName() + " Vaccine has a total of " + String.valueOf(data.getPieValue()).replace(".0", "") + " shot(s)");
+						
+					}
+				});
+				
+			}
+		}
+		 
 	
 ////////////////////////////////////////////////PET OWNER TAB //////////////////////////////////////////////////	
 	
 	public void closePetOwnerTab(ActionEvent event)
 	{
-		//tabPane.getTabs().remove(petOwner);
+		
 		 EventHandler<Event> handler = petOwner.getOnClosed();
 	        if (null != handler) {
 	            handler.handle(null);
@@ -202,7 +312,6 @@ public class MainInterfaceController implements Initializable {
 	        }
 	}
 	
-	// add new owner info in Pet Owner tab
 	
 	public void saveOwnerInfo(ActionEvent event) {
 		
@@ -309,8 +418,7 @@ public class MainInterfaceController implements Initializable {
 				alert.setTitle("Program says");
 				alert.setHeaderText("Owner not found");
 				alert.show();
-				textField_ownerFirstName.clear();
-				textField_ownerLastName.clear();
+				textField_ownerIcNumber.clear();
 				return;
 			}
 			
@@ -406,6 +514,111 @@ public class MainInterfaceController implements Initializable {
 		
 	}
 	
+	
+	public void deleteOwner(ActionEvent event) {
+		
+		String icNumber = textField_ownerIcNumber.getText().trim();
+ 		
+ 		if (icNumber.isEmpty()) {
+ 			Alert alert = new Alert(AlertType.ERROR);
+ 			alert.setTitle("Program says");
+ 			alert.setHeaderText("Pet Owner IC is missing.");
+ 			alert.show();
+ 			return;
+ 		}
+ 		
+		
+		 Alert alertConfirm = new Alert(AlertType.CONFIRMATION);
+		 alertConfirm.setTitle("Program says");
+		 alertConfirm.setHeaderText("Are you sure you want to delete?");
+		
+
+         Optional<ButtonType> result = alertConfirm.showAndWait();
+         if (result.get() == ButtonType.OK){
+        	
+        	 try {
+         			Integer ownerID = model.getOwnerID(icNumber);
+         			
+         			
+         			if (ownerID == null) {
+         				Alert alert = new Alert(AlertType.ERROR);
+         				alert.setTitle("Program says");
+         				alert.setHeaderText("Pet Owner not found in database");
+         				alert.show();
+         				return;
+         			}
+         			
+         			List<Integer> petID = model.getAllPetID(ownerID);
+         			
+         			if (!petID.isEmpty()) {
+						
+         				for(Integer id : petID)
+             			{
+         					if (model.deletePetInfo(id)) {
+								
+         						if (model.deleteMedRecord(id)) {
+									
+         							log.logFile(null, "info", "Medication Record for petID: " + id + "is successful");
+								}
+         						
+         						else {
+									
+         							log.logFile(null, "info", "Medication Record for petID: " + id + "not found");
+								}
+         						
+         						if (model.deleteVacRecord(id)) {
+         							log.logFile(null, "info", "Vaccination Record for petID: " + id + "is successful");
+								}
+
+         						else {
+         							log.logFile(null, "info", "Vaccination Record for petID: " + id + "not found");
+								}
+							}
+             			}
+             			
+					}
+         			
+         			else {
+         				log.logFile(null, "info", "Owner with IC:" + icNumber + "has not pet");
+					}
+         			
+         			if (model.deleteOwnerInfo(ownerID)) {
+         				log.logFile(null, "info", "Pet Owner with IC: " + icNumber + " is deleted successfully!");
+         				Alert alert = new Alert(AlertType.INFORMATION);
+         				alert.setTitle("Program says");
+         				alert.setHeaderText("Pet Owner with IC: " + icNumber + " is deleted successfully!");
+         				alert.show();
+         				clearInfo(event);
+					}
+         			
+         			else {
+         				log.logFile(null, "info", "Pet Owner with IC: " + icNumber + " is not deleted");
+         				Alert alert = new Alert(AlertType.ERROR);
+         				alert.setTitle("Program says");
+         				alert.setHeaderText("Pet Owner with IC: " + icNumber + " is not deleted");
+         				alert.show();
+					}
+         			
+         			if (model.deleteOwnerAppointment(ownerID)) {
+         				log.logFile(null, "info", "Pet Owner with IC: " + icNumber + " upcoming appointments are deleted successfully!");
+					}
+         			else {
+         				log.logFile(null, "info", "Pet Owner with IC: " + icNumber + " upcoming appointments not found");
+					}
+         			
+         		
+			      	
+ 			} catch (Exception e) {
+ 				log.logFile(e, "severe", e.getMessage());
+ 				e.printStackTrace();
+ 			}
+        	 
+        	 
+        	 
+         
+         }
+	}
+	
 	public void refreshPetTable(ActionEvent event) {
 		
 		String icNumber = textField_ownerIcNumber.getText().trim();
@@ -440,7 +653,7 @@ public class MainInterfaceController implements Initializable {
 				if (petList.isEmpty()) {
 					Alert alert = new Alert(AlertType.ERROR);
 					alert.setTitle("Program says");
-					alert.setHeaderText("No Record found.");
+					alert.setHeaderText("No Pet Record found.");
 					alert.show();
 					petTable.setItems(null);
 					return;
@@ -461,7 +674,7 @@ public class MainInterfaceController implements Initializable {
 		}
 	}
 	
-	// add new pet from  button
+	
 	
 	public void addPet(ActionEvent event) {
 		
@@ -501,6 +714,7 @@ public class MainInterfaceController implements Initializable {
 				scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 				primaryStage.setScene(scene);
 				primaryStage.show();
+				
 			
 		} catch (SQLException e) {
 			log.logFile(e, "severe", e.getMessage());
@@ -508,10 +722,7 @@ public class MainInterfaceController implements Initializable {
 		} catch (IOException e) {
 			log.logFile(e, "severe", e.getMessage());
 			e.printStackTrace();
-		}
-		
-		
-		
+		}	
 	}
 	
 
@@ -520,6 +731,7 @@ public class MainInterfaceController implements Initializable {
 		try {
 			
 			if(event.getClickCount() == 2)
+				
 			{
 				String petName = "";
 				String petType = "";
@@ -551,8 +763,6 @@ public class MainInterfaceController implements Initializable {
 					{
 						petName = item.getPetName();
 						petType = item.getPetType();
-						
-						
 					}
 			
 				 if(!tabPane.getTabs().contains(petInfo) && !petName.isEmpty()) {
@@ -569,7 +779,7 @@ public class MainInterfaceController implements Initializable {
 					if (petID == null) {
 						Alert alert = new Alert(AlertType.ERROR);
 						alert.setTitle("Program says");
-						alert.setHeaderText("Pet is not registered.");
+						alert.setHeaderText("Pet not found");
 						alert.show();
 						return;
 					}
@@ -579,19 +789,17 @@ public class MainInterfaceController implements Initializable {
 				 if (petList.isEmpty()) {
 					 Alert alert = new Alert(AlertType.ERROR);
 						alert.setTitle("Program says");
-						alert.setHeaderText("No pet found");
+						alert.setHeaderText("Pet not found");
 						alert.show();
 						return;
 				 }
+				 
 				 label_petName.setText("Pet Name : " + petList.get(0).getPetName());
 				 label_breed.setText("Breed : " + petList.get(0).getBreed());
 				 label_petType.setText("Pet Type : " + petList.get(0).getPetType());
 				 label_gender.setText("Gender : " + petList.get(0).getGender());
 				 label_dob.setText("DOB : " + petList.get(0).getDob());
 				 label_neutered.setText("Neutered : " + petList.get(0).getNeutered());
-				 
-				 
-	
 			}
 			
 		} catch (SQLException e) {
@@ -940,7 +1148,7 @@ public class MainInterfaceController implements Initializable {
 			if (vaccineRecords.isEmpty()) {
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Program says");
-				alert.setHeaderText("No Record found.");
+				alert.setHeaderText("No Vaccination Record found.");
 				alert.show();
 				vacRecordTable.setItems(null);
 				return;
@@ -1087,7 +1295,7 @@ public class MainInterfaceController implements Initializable {
 				if (medicationRecords.isEmpty()) {
 					Alert alert = new Alert(AlertType.ERROR);
 					alert.setTitle("Program says");
-					alert.setHeaderText("No Record found.");
+					alert.setHeaderText("No Medication Record found.");
 					alert.show();
 					medRecordTable.setItems(null);
 					return;
@@ -1115,7 +1323,7 @@ public class MainInterfaceController implements Initializable {
 		// close tab
 		public void closeCalenderTab(ActionEvent event)
 		{
-			//tabPane.getTabs().remove(petOwner);
+			
 			 EventHandler<Event> handler = calender.getOnClosed();
 		        if (null != handler) {
 		            handler.handle(null);
@@ -1129,18 +1337,9 @@ public class MainInterfaceController implements Initializable {
 		try {
 			 ObservableList<String> appointmentList = model.getAppointmentList();
 			 
-			 if (appointmentList.isEmpty()) {
-				 Alert alert = new Alert(AlertType.ERROR);
-					alert.setTitle("Program says");
-					alert.setHeaderText("No record found");
-					alert.show();
-					return;
+			 if (!appointmentList.isEmpty()) {
+				 appointmentListView.setItems(appointmentList);
 			 }
-			 
-			 appointmentListView.setItems(appointmentList);
-			 
-			 
-			 
 			 
 		} catch (Exception e) {
 			log.logFile(e, "severe", e.getMessage());
@@ -1157,7 +1356,8 @@ public class MainInterfaceController implements Initializable {
 			if (event.getClickCount() == 2) {
 				
 				if (!appointmentListView.getSelectionModel().isEmpty()) {
-					Integer appID = Integer.parseInt(appointmentListView.getSelectionModel().getSelectedItem().substring(0, 1));
+					String listView_item = appointmentListView.getSelectionModel().getSelectedItem();
+					Integer appID = Integer.parseInt(listView_item.substring(0, listView_item.indexOf(".")).trim());
 					Stage primaryStage = new Stage();
 					FXMLLoader loader = new FXMLLoader();
 					Pane root = loader.load(getClass().getResource("/fxml/AppointmentInfo.fxml").openStream());
@@ -1200,6 +1400,586 @@ public class MainInterfaceController implements Initializable {
 	    }
 	    return true;
 	}
+	
+	
+//////////////////////////////////////////////// USER TAB //////////////////////////////////////////////////		
+	
+	public void closeUserTab(ActionEvent event)
+	{
+		
+		 EventHandler<Event> handler = user.getOnClosed();
+	        if (null != handler) {
+	            handler.handle(null);
+	        } else {
+	        	user.getTabPane().getTabs().remove(user);
+	        	clearUserTextField(event);
+	        	pf_oldPF.clear();
+	        	pf_editPF.clear();
+	        	listView_users.setItems(null);
+	        }
+	}
+	
+	public void viewAllUsers(ActionEvent event) throws SQLException {
+		
+		 ObservableList<String> userList = model.getUserList();
+		 listView_users.setItems(userList);
+		 
+	}
+	
+	
+	
+	public void editPassword(ActionEvent event) throws SQLException
+	{
+		String userName = listView_users.getSelectionModel().getSelectedItem();
+		
+		if (userName.isEmpty()) {
+			 Alert alert = new Alert(AlertType.ERROR);
+				alert.setTitle("Program says");
+				alert.setHeaderText("To edit password, please select user from list, retype old password and new password");
+				alert.show();
+				return;
+			
+		}
+		
+		if (pf_oldPF.getText().isEmpty() || pf_editPF.getText().isEmpty()) {
+			 Alert alert = new Alert(AlertType.ERROR);
+				alert.setTitle("Program says");
+				alert.setHeaderText("To edit password, please retype old password and new password");
+				alert.show();
+				return;
+		}
+		
+		if (userName.contentEquals("admin")) {
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.setTitle("Program says");
+			alert.setHeaderText("Admin password cannot be changed!");
+			alert.show();
+			log.logFile(null, "info", userName + " attempt to change admin password");
+			pf_oldPF.clear();
+			pf_editPF.clear();
+			return;
+		}
+		
+		String pwd = model.getUserPwd(userName);
+		
+		
+		if (pwd != null) {
+			
+			
+			if (pf_oldPF.getText().contentEquals(pwd)) {
+				
+				if (model.editUserPwd(userName, pf_editPF.getText().trim())) {
+					
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("User Password is updated");
+						alert.show();
+						pf_oldPF.clear();
+						pf_editPF.clear();
+						log.logFile(null, "info", userName + " updated password successfully");
+				}
+				
+				else {
+						log.logFile(null, "warning", userName + " updated password not successful.");
+				}
+				
+				
+			}
+			
+			else {
+				 Alert alert = new Alert(AlertType.ERROR);
+					alert.setTitle("Program says");
+					alert.setHeaderText("Old Password is incorrect");
+					alert.show();
+					pf_oldPF.clear();
+					pf_editPF.clear();
+					
+			}
+		}
+		
+		
+	}
+	
+	public void registerNewUser(ActionEvent event) throws SQLException
+	{
+		
+		String new_user = tf_newUser.getText().trim();
+		String new_pf = pf_newPF.getText().trim();
+		String confirm_pf = pf_confirmPF.getText().trim();
+		
+		
+		if (new_user.isEmpty()) {
+			 Alert alert = new Alert(AlertType.ERROR);
+				alert.setTitle("Program says");
+				alert.setHeaderText("Text Field is empty");
+				alert.show();
+				return;
+		}
+		
+		if (new_pf.isEmpty() || confirm_pf.isEmpty()) {
+			 Alert alert = new Alert(AlertType.ERROR);
+				alert.setTitle("Program says");
+				alert.setHeaderText("Password Field is empty");
+				alert.show();
+				return;
+		}
+		
+		if (new_pf.contentEquals(confirm_pf)) {
+			
+			if (model.registerNewUser(new_user, confirm_pf)) {
+				
+				log.logFile(null, "info", new_user + " is registered successfully");
+				
+				 Alert alert = new Alert(AlertType.INFORMATION);
+					alert.setTitle("Program says");
+					alert.setHeaderText("User is registered");
+					alert.show();
+					viewAllUsers(event);
+					clearUserTextField(event);
+			}
+		}
+		
+		else {
+			
+			 Alert alert = new Alert(AlertType.ERROR);
+				alert.setTitle("Program says");
+				alert.setHeaderText("Password is not the same");
+				alert.show();
+				pf_newPF.clear();
+				pf_confirmPF.clear();
+				
+				return;
+		}
+		
+		
+	}
+	
+	public void deleteUser(ActionEvent event) throws SQLException {
+		
+		String userName = label_userName.getText().substring(15);
+
+		 Alert alertConfirm = new Alert(AlertType.CONFIRMATION);
+		 alertConfirm.setTitle("Program says");
+		 alertConfirm.setHeaderText("Are you sure you want to delete?");
+		
+
+        Optional<ButtonType> result = alertConfirm.showAndWait();
+        if (result.get() == ButtonType.OK){
+        	
+        	if (userName.contentEquals("admin")) {
+    			Alert alert = new Alert(AlertType.ERROR);
+    			alert.setTitle("Program says");
+    			alert.setHeaderText("Admin user cannot be deleted!");
+    			alert.show();
+    			log.logFile(null, "info", userName + " attempt to delete admin user.");
+    			return;
+    		}
+        	
+        	if (model.deleteUser(userName)) {
+        		log.logFile(null, "info", userName + " is deleted successfully");
+				
+				 Alert alert = new Alert(AlertType.INFORMATION);
+					alert.setTitle("Program says");
+					alert.setHeaderText("User is registered");
+					alert.show();
+					logout(event);
+			}
+        	
+        	else {
+				log.logFile(null, "warning", userName + " is not deleted");
+			}
+        	
+        	
+        	
+        	}
+        }
+	
+	
+
+	public void clearUserTextField(ActionEvent event)
+	{
+		tf_newUser.clear();
+		pf_newPF.clear();
+		pf_confirmPF.clear();
+	}
+	
+	
+/////////////////////////////////////////////// DATABASE TAB ////////////////////////////////////////////////	
+	
+	public void closeDatabaseTab(ActionEvent event)
+	{
+		
+		 EventHandler<Event> handler = database.getOnClosed();
+	        if (null != handler) {
+	            handler.handle(null);
+	        } else {
+	        	database.getTabPane().getTabs().remove(database);
+	        	tf_newEntry.clear();
+	        	listView_database.setItems(null);
+	        	tb_database.getItems().clear();
+	        	tb_database.getColumns().clear();
+	        	label_listName.setText("");
+	        }
+	}
+	
+	public void selectType(ActionEvent event) {
+		try {
+			
+			if (rb_catVaccine.isSelected()) {
+				 ObservableList<String> vacCatList = model_VacRecord.getVaccineCat();
+				 listView_database.setItems(vacCatList);
+				 label_listName.setText("Cat Vaccine");
+			}
+			
+			else if(rb_dogVaccine.isSelected()) {
+				
+				 ObservableList<String> vacDogList = model_VacRecord.getVaccineDog();
+				 listView_database.setItems(vacDogList);
+				 label_listName.setText("Dog Vaccine");
+			}
+			
+			else if(rb_catBreed.isSelected()) {
+				
+				 ObservableList<String> catBreed = model_breed.getCatBreedList();
+				 listView_database.setItems(catBreed);
+				 label_listName.setText("Cat Breed");
+			}
+			
+			else if(rb_dogBreed.isSelected()) {
+				
+				 ObservableList<String> dogBreed = model_breed.getDogBreedList();
+				 listView_database.setItems(dogBreed);
+				 label_listName.setText("Dog Breed");
+			}
+			
+			else {
+				listView_database.setItems(null);
+			}
+			 
+			
+			
+		} catch (Exception e) {
+			 Alert alert = new Alert(AlertType.ERROR);
+				alert.setTitle("Program says");
+				alert.setHeaderText(e.getMessage());
+				alert.show();
+		}
+		
+	}
+	
+	public void addNewEntry(ActionEvent event) {
+	
+		try {
+			
+			String newEntry = tf_newEntry.getText().trim();
+			
+			if (newEntry.isEmpty()) {
+				 Alert alert = new Alert(AlertType.ERROR);
+					alert.setTitle("Program says");
+					alert.setHeaderText("Text Field is empty");
+					alert.show();
+					return;
+			}
+			
+			if (rb_catVaccine.isSelected()) {
+				
+				if (model.addNewCatVac(newEntry)) {
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("New Vaccine Added Successfully!");
+						alert.show();
+						tf_newEntry.clear();
+						selectType(event);
+						log.logFile(null, "info", newEntry + " is added successfully");
+				}
+				else {
+						log.logFile(null, "warning", newEntry + " unable to add vaccine");
+				}
+			}
+			
+			else if (rb_dogVaccine.isSelected()) {
+
+				if (model.addNewDogVac(newEntry)) {
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("New Vaccine Added Successfully!");
+						alert.show();
+						tf_newEntry.clear();
+						selectType(event);
+						log.logFile(null, "info", newEntry + " is added successfully");
+				}
+				else {
+					log.logFile(null, "warning", newEntry + " unable to add vaccine");
+				}
+			}
+			
+			else if(rb_catBreed.isSelected()){
+				
+				if (model.addNewBreed(newEntry, true)) {
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("New Breed Added Successfully!");
+						alert.show();
+						tf_newEntry.clear();
+						selectType(event);
+						log.logFile(null, "info", newEntry + " is added successfully");
+				}
+				else {
+					log.logFile(null, "warning", newEntry + " unable to add breed");
+				}
+			
+			}
+			
+			else if (rb_dogBreed.isSelected()) {
+				if (model.addNewBreed(newEntry, false)) {
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("New Breed Added Successfully!");
+						alert.show();
+						tf_newEntry.clear();
+						selectType(event);
+						log.logFile(null, "info", newEntry + " is added successfully");
+				}
+				
+				else {
+					log.logFile(null, "warning", newEntry + " unable to add breed");
+				}
+			}
+			
+			
+		} catch (Exception e) {
+			log.logFile(null, "severe", e.getMessage());
+		}
+		
+		
+		
+	}
+	
+	public void deleteItem(ActionEvent event) throws SQLException {
+		
+		if (!listView_database.getSelectionModel().isEmpty()) {
+			
+			String delete_item = listView_database.getSelectionModel().getSelectedItem();
+			
+			if (rb_catVaccine.isSelected()) {
+				if (model.deleteCatVac(delete_item)) {
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("Vaccine is Deleted Successfully!");
+						alert.show();
+						selectType(event);
+						log.logFile(null, "info", delete_item + " deleted successfully");
+						
+				}
+				
+				else {
+						log.logFile(null, "warning", delete_item + " unable to delete vaccine");
+				}
+			
+			}
+			
+			else if (rb_dogVaccine.isSelected()) {
+				if (model.deleteDogVac(delete_item)) {
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("Vaccine is Deleted Successfully!");
+						alert.show();
+						selectType(event);
+						log.logFile(null, "info", delete_item + " deleted successfully");
+				}
+				
+				else {
+					log.logFile(null, "warning", delete_item + " unable to delete vaccine");
+				}
+			
+			}
+			
+			else if (rb_catBreed.isSelected()){
+				if (model.deleteBreed(delete_item, true)) {
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("Breed is Deleted Successfully!");
+						alert.show();
+						selectType(event);
+						log.logFile(null, "info", delete_item + " deleted successfully");
+				}
+				else {
+					log.logFile(null, "warning", delete_item + " unable to delete breed");
+				}
+				
+			}
+			
+			else if (rb_dogBreed.isSelected()){
+				if (model.deleteBreed(delete_item, false)) {
+					 Alert alert = new Alert(AlertType.INFORMATION);
+						alert.setTitle("Program says");
+						alert.setHeaderText("Breed is Deleted Successfully!");
+						alert.show();
+						selectType(event);
+						log.logFile(null, "info", delete_item + " deleted successfully");
+				}
+				else {
+						log.logFile(null, "warning", delete_item + " unable to delete breed.");
+				}
+				
+			}
+			
+		}
+		
+		else {
+			 Alert alert = new Alert(AlertType.ERROR);
+				alert.setTitle("Program says");
+				alert.setHeaderText("No Item is selected");
+				alert.show();
+		}
+		
+		
+	}
+	
+	public void getTable(ResultSet rs) {
+		
+		 database_data = FXCollections.observableArrayList();
+		
+		try {
+			
+			 for(int i=0 ; i<rs.getMetaData().getColumnCount(); i++){
+				 
+	                //We are using non property style for making dynamic table
+				 
+	                final int j = i;                
+	                TableColumn col = new TableColumn(rs.getMetaData().getColumnName(i+1));
+	                col.setCellValueFactory(new Callback<CellDataFeatures<ObservableList,String>,ObservableValue<String>>(){                    
+	                    public ObservableValue<String> call(CellDataFeatures<ObservableList, String> param) {                                                                                              
+	                        return new SimpleStringProperty(param.getValue().get(j).toString());                        
+	                    }                    
+	                });
+
+	                tb_database.getColumns().addAll(col); 
+	                
+	            }
+
+			 
+	            while(rs.next()){
+	                //Iterate Row
+	            	
+	                ObservableList<String> row = FXCollections.observableArrayList();
+	                for(int i=1 ; i<=rs.getMetaData().getColumnCount(); i++){
+	                	
+	                    //Iterate Column
+	                	
+	                    row.add(rs.getString(i));
+	                }
+	              
+	                database_data.add(row);
+
+	            }
+
+	            //FINALLY ADDED TO TableView
+	            
+	            tb_database.setItems(database_data);
+	            
+		} catch (Exception e) {
+				log.logFile(null, "severe", "unable to show table. " + e.getMessage() );
+				e.printStackTrace();
+		}
+	}
+
+	
+	public void viewOwnerTable(ActionEvent event) {
+		tb_database.getItems().clear();
+		tb_database.getColumns().clear();
+		 ResultSet rs = model.getTable(true);
+		 getTable(rs);
+		
+	}
+	
+	
+	public void viewPetTable(ActionEvent event) {
+		tb_database.getItems().clear();
+		tb_database.getColumns().clear();
+		 ResultSet rs = model.getTable(false);
+		 getTable(rs);
+		
+	}
+	
+	public void viewVacTable(ActionEvent event) {
+		tb_database.getItems().clear();
+		tb_database.getColumns().clear();
+		 ResultSet rs = model.getRecord(true);
+		 getTable(rs);
+		
+	}
+	
+	public void viewMedTable(ActionEvent event) {
+		tb_database.getItems().clear();
+		tb_database.getColumns().clear();
+		 ResultSet rs = model.getRecord(false);
+		 getTable(rs);
+		
+	}
+	
+	
+	public void clearDatabaseTextField(ActionEvent event) {
+		tf_newEntry.clear();
+	}
+	
+	public void resetDatabase(ActionEvent event) throws SQLException {
+		 Alert alertConfirm = new Alert(AlertType.CONFIRMATION);
+		 alertConfirm.setTitle("Program says");
+		 alertConfirm.setHeaderText("Are you sure you want to reset database?");
+		 alertConfirm.setContentText("This action will delete all Owners, Pets, Vaccination and Medication Records.");
+		
+
+         Optional<ButtonType> result = alertConfirm.showAndWait();
+         if (result.get() == ButtonType.OK){
+        	 int count = model.deleteAll();
+     		if (count > 1) {
+     			Alert alert = new Alert(AlertType.INFORMATION);
+     			alert.setTitle("Program says");
+     			alert.setHeaderText("Database Reset Successful.");
+     			alert.show();
+     			log.logFile(null, "info", "Database Reset Successful.");
+     		}
+     		else {
+     			log.logFile(null, "warning", "Database Reset Not Successful.");
+     		}
+         }
+		
+	}
+	
+	
+/////////////////////////////////////////////// STATISTICS TAB ////////////////////////////////////////////////	
+	
+	public void closeStatisticsTab(ActionEvent event) {
+		 EventHandler<Event> handler = statistics.getOnClosed();
+		if (null != handler) {
+            handler.handle(null);
+        } else {
+        	statistics.getTabPane().getTabs().remove(statistics);
+        	label_pieChartNumber.setText("");;
+        	
+        }
+	}
+	
+	public void buildPieChart() {
+		 piechart_data = FXCollections.observableArrayList();
+		 
+		 try {
+			 ResultSet rs = model.getPieChartData();
+			 while(rs.next()){
+				 
+	                //adding data on piechart data
+	                piechart_data.add(new PieChart.Data(rs.getString("Vaccine"),rs.getInt("count(Vaccine)")));
+			 }
+			 
+		} catch (Exception e) {
+			
+			log.logFile(null, "severe", "unable to show pie chart. " + e.getMessage());
+		
+		}
+		
+	}
+	
 	
 
 	

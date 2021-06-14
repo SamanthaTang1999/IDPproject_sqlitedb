@@ -55,7 +55,8 @@ public class AppointmentListController {
 			if (event.getClickCount() == 2) {
 				
 				if (!listView_appointmentList.getSelectionModel().isEmpty()) {
-					Integer appID = Integer.parseInt(listView_appointmentList.getSelectionModel().getSelectedItem().substring(0, 1));
+					String listView_item = listView_appointmentList.getSelectionModel().getSelectedItem();
+					Integer appID = Integer.parseInt(listView_item.substring(0, listView_item.indexOf(".")).trim());
 					Stage primaryStage = new Stage();
 					FXMLLoader loader = new FXMLLoader();
 					Pane root = loader.load(getClass().getResource("/fxml/AppointmentInfo.fxml").openStream());
