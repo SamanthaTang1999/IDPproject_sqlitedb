@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -22,26 +25,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainInterfaceController">
    <children>
-      <MenuBar AnchorPane.bottomAnchor="580.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Empty" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Empty" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Empty" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <JFXTabPane fx:id="tabPane" layoutX="81.0" layoutY="118.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+      <JFXTabPane fx:id="tabPane" layoutX="81.0" layoutY="118.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <tabs>
           <Tab closable="false" text="My Dashboard">
             <content>
@@ -94,7 +78,7 @@
                                           </VBox>
                                        </graphic>
                                     </Button>
-                                    <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+                                    <Button mnemonicParsing="false" onAction="#goToUser" prefHeight="150.0" prefWidth="150.0">
                                        <graphic>
                                           <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="140.0">
                                              <children>
@@ -103,7 +87,7 @@
                                                       <Insets bottom="22.5" top="20.0" />
                                                    </VBox.margin>
                                                 </FontAwesomeIconView>
-                                                <Label alignment="BOTTOM_CENTER" text="Label" textFill="WHITE">
+                                                <Label alignment="BOTTOM_CENTER" text="User Profile" textFill="WHITE">
                                                    <font>
                                                       <Font name="SansSerif Bold" size="17.0" />
                                                    </font>
@@ -122,7 +106,7 @@
                               </HBox>
                               <HBox prefHeight="220.0" prefWidth="800.0" spacing="80.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+                                    <Button mnemonicParsing="false" onAction="#goToSettings" prefHeight="150.0" prefWidth="150.0">
                                        <HBox.margin>
                                           <Insets left="80.0" top="30.0" />
                                        </HBox.margin>
@@ -134,7 +118,7 @@
                                                       <Insets bottom="22.5" top="20.0" />
                                                    </VBox.margin>
                                                 </FontAwesomeIconView>
-                                                <Label alignment="BOTTOM_CENTER" text="Label" textFill="WHITE">
+                                                <Label alignment="BOTTOM_CENTER" text="Database" textFill="WHITE">
                                                    <font>
                                                       <Font name="SansSerif Bold" size="17.0" />
                                                    </font>
@@ -143,7 +127,7 @@
                                           </VBox>
                                        </graphic>
                                     </Button>
-                                    <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+                                    <Button mnemonicParsing="false" onAction="#goToStatistics" prefHeight="150.0" prefWidth="150.0">
                                        <HBox.margin>
                                           <Insets top="30.0" />
                                        </HBox.margin>
@@ -155,7 +139,7 @@
                                                       <Insets bottom="22.5" top="20.0" />
                                                    </VBox.margin>
                                                 </FontAwesomeIconView>
-                                                <Label alignment="BOTTOM_CENTER" text="Label" textFill="WHITE">
+                                                <Label alignment="BOTTOM_CENTER" text="Statistics" textFill="WHITE">
                                                    <font>
                                                       <Font name="SansSerif Bold" size="17.0" />
                                                    </font>
@@ -193,14 +177,6 @@
                                     <Insets bottom="40.0" />
                                  </VBox.margin>
                               </HBox>
-                              <Label fx:id="label_welcomeUser" alignment="BOTTOM_LEFT" text="Current User :" textFill="#707c80">
-                                 <font>
-                                    <Font name="SansSerif Regular" size="24.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" left="20.0" />
-                                 </VBox.margin>
-                              </Label>
                            </children>
                         </VBox>
                      </children>
@@ -331,6 +307,11 @@
                                        </HBox.margin>
                                     </Button>
                                     <Button mnemonicParsing="false" onAction="#editOwnerInfo" prefHeight="20.0" text="Edit Owner Info">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#deleteOwner" prefHeight="20.0" prefWidth="100.0" text="Delete Owner">
                                        <HBox.margin>
                                           <Insets left="10.0" />
                                        </HBox.margin>
@@ -534,7 +515,7 @@
                               </Pane>
                               <VBox alignment="CENTER" prefHeight="400.0" prefWidth="180.0">
                                  <children>
-                                    <Label alignment="CENTER" prefWidth="180.0" text="Upcoming Appointment" textFill="#707c80">
+                                    <Label alignment="CENTER" prefWidth="180.0" text="Upcoming Appointments" textFill="#707c80">
                                        <font>
                                           <Font name="SansSerif Regular" size="13.0" />
                                        </font>
@@ -559,6 +540,82 @@
                               </VBox>
                            </children>
                         </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="user" text="User Profile">
+               <content>
+                  <AnchorPane prefWidth="800.0">
+                     <children>
+                        <Button layoutX="43.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeUserTab" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
+                           </graphic>
+                        </Button>
+                        <Label fx:id="label_userName" layoutX="58.0" layoutY="63.0" text="Label" />
+                        <JFXButton layoutX="63.0" layoutY="172.0" onAction="#editPassword" text="Edit Password" />
+                        <Separator layoutY="213.0" prefWidth="200.0" AnchorPane.bottomAnchor="339.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="210.0" />
+                        <Label layoutX="31.0" layoutY="227.0" text="Register New User" />
+                        <JFXTextField fx:id="tf_newUser" layoutX="38.0" layoutY="276.0" promptText="User Name" />
+                        <JFXPasswordField fx:id="pf_newPF" layoutX="38.0" layoutY="326.0" promptText="New Password" />
+                        <JFXPasswordField fx:id="pf_confirmPF" layoutX="38.0" layoutY="388.0" promptText="Confirm Password" />
+                        <JFXButton layoutX="41.0" layoutY="463.0" onAction="#registerNewUser" text="Register" />
+                        <JFXButton layoutX="170.0" layoutY="463.0" onAction="#clearUserTextField" text="Clear " />
+                        <JFXPasswordField fx:id="pf_oldPF" layoutX="61.0" layoutY="96.0" promptText="Old Password" />
+                        <JFXPasswordField fx:id="pf_editPF" layoutX="61.0" layoutY="137.0" promptText="New Password" />
+                        <JFXButton layoutX="233.0" layoutY="164.0" onAction="#deleteUser" text="Delete Current User" />
+                        <ListView fx:id="listView_users" layoutX="424.0" layoutY="33.0" prefHeight="181.0" prefWidth="144.0" />
+                        <Label layoutX="433.0" layoutY="15.0" text="User List" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="database" text="Database">
+               <content>
+                  <AnchorPane prefWidth="800.0">
+                     <children>
+                        <Button layoutX="43.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeDatabaseTab" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
+                           </graphic>
+                        </Button>
+                        <JFXRadioButton fx:id="rb_catVaccine" layoutX="24.0" layoutY="83.0" onAction="#selectType" text="Cat Vaccine">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="vac_petType" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rb_dogVaccine" layoutX="150.0" layoutY="83.0" onAction="#selectType" text="Dog Vaccine" toggleGroup="$vac_petType" />
+                        <ListView fx:id="listView_database" layoutX="19.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" />
+                        <JFXButton layoutX="400.0" layoutY="140.0" onAction="#addNewEntry" text="Add" />
+                        <JFXButton layoutX="247.0" layoutY="167.0" onAction="#deleteItem" text="Delete" />
+                        <JFXTextField fx:id="tf_newEntry" layoutX="228.0" layoutY="126.0" promptText="New Entry" />
+                        <JFXButton layoutX="473.0" layoutY="140.0" onAction="#clearDatabaseTextField" text="Clear" />
+                        <JFXRadioButton fx:id="rb_catBreed" layoutX="332.0" layoutY="84.0" onAction="#selectType" text="Cat Breed" toggleGroup="$vac_petType" />
+                        <JFXRadioButton fx:id="rb_dogBreed" layoutX="454.0" layoutY="84.0" onAction="#selectType" text="Dog Breed" toggleGroup="$vac_petType" />
+                        <Label layoutX="38.0" layoutY="46.0" text="Manage Database" />
+                        <JFXButton fx:id="button_viewAllOwners" layoutX="31.0" layoutY="326.0" onAction="#viewOwnerTable" text="View All Pet Owners" />
+                        <JFXButton fx:id="button_viewAllPets" layoutX="201.0" layoutY="326.0" onAction="#viewPetTable" text="View All Pets" />
+                        <TableView fx:id="tb_database" layoutX="71.0" layoutY="353.0" prefHeight="200.0" prefWidth="558.0" />
+                        <Label fx:id="label_listName" layoutX="23.0" layoutY="109.0" />
+                        <JFXButton layoutX="602.0" layoutY="14.0" onAction="#resetDatabase" text="Reset Database" textFill="#d31b15" />
+                        <JFXButton layoutX="285.0" layoutY="300.0" onAction="#viewVacTable" text="View All Vaccination Records" />
+                        <JFXButton layoutX="485.0" layoutY="313.0" onAction="#viewMedTable" text="View All Medication Records" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="statistics" text="Statistics">
+               <content>
+                  <AnchorPane prefWidth="800.0">
+                     <children>
+                        <Button layoutX="43.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeStatisticsTab" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
+                           </graphic>
+                        </Button>
+                        <PieChart fx:id="pieChart" layoutX="131.0" layoutY="72.0" title="Types of Vaccines" titleSide="BOTTOM" />
+                        <Label fx:id="label_pieChartNumber" layoutX="366.0" layoutY="505.0" />
                      </children>
                   </AnchorPane>
                </content>

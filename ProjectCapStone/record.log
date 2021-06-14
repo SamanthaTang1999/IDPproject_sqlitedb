@@ -1834,3 +1834,2897 @@ INFO: Connected to SQLite database
 Jun 11, 2021 3:14:44 PM common.Log logFile
 INFO: Voon log in successfully.
 
+Jun 11, 2021 5:08:09 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 5:09:32 PM common.Log logFile
+WARNING: Credential is invalid for voon
+
+Jun 11, 2021 5:09:38 PM common.Log logFile
+WARNING: Credential is invalid for voon
+
+Jun 11, 2021 5:09:42 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 9:32:16 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 9:32:22 PM common.Log logFile
+WARNING: Credential is invalid for voon
+
+Jun 11, 2021 9:32:28 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 9:33:39 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 9:33:44 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 9:36:08 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 9:36:19 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 9:37:04 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 9:37:09 PM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 11, 2021 9:37:15 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 9:38:20 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 9:38:24 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 9:40:43 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 9:40:49 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 10:19:50 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:19:56 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 10:22:00 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:22:03 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 10:30:18 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:30:27 PM common.Log logFile
+WARNING: Credential is invalid for vet
+
+Jun 11, 2021 10:30:35 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 10:30:35 PM common.Log logFile
+SEVERE: Error resolving onAction='#clearTextField', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:589
+ for Voon
+
+javafx.fxml.LoadException: Error resolving onAction='#clearTextField', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:589
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 11, 2021 10:31:11 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:31:17 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 10:31:36 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:31:39 PM common.Log logFile
+INFO: vet log in successfully.
+
+Jun 11, 2021 10:32:03 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:32:10 PM common.Log logFile
+INFO: wing log in successfully.
+
+Jun 11, 2021 10:54:52 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:54:58 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 10:56:05 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:56:10 PM common.Log logFile
+INFO: wing log in successfully.
+
+Jun 11, 2021 10:58:01 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 10:58:08 PM common.Log logFile
+WARNING: Credential is invalid for voon
+
+Jun 11, 2021 10:58:13 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 11:01:40 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 11:01:46 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 11:07:09 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 11:07:17 PM common.Log logFile
+INFO: wing log in successfully.
+
+Jun 11, 2021 11:08:03 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 11:08:08 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 11:08:33 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 11:10:15 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 11:10:21 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 11, 2021 11:10:21 PM common.Log logFile
+SEVERE: Error resolving onAction='#showUserPwd', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:588
+ for Voon
+
+javafx.fxml.LoadException: Error resolving onAction='#showUserPwd', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:588
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 11, 2021 11:10:37 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 11, 2021 11:10:41 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 12:29:09 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:29:29 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 12:34:02 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:34:08 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 12:34:17 PM common.Log logFile
+INFO: wong is registered successfully
+
+Jun 12, 2021 12:50:52 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:51:50 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:51:56 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 12:53:01 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:53:06 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 12:53:51 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:53:56 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 12:56:16 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:56:22 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 12:57:34 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:57:39 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 12:58:17 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 12:58:23 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 1:00:21 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 1:00:29 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 1:02:14 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 1:02:18 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 1:03:20 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 1:03:25 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 1:08:57 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 1:09:01 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 1:09:07 PM common.Log logFile
+SEVERE: [SQLITE_ERROR] SQL error or missing database (near "FROM": syntax error)
+
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "FROM": syntax error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1012)
+	at org.sqlite.core.DB.newSQLException(DB.java:1024)
+	at org.sqlite.core.DB.throwex(DB.java:989)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:134)
+	at org.sqlite.core.DB.prepare(DB.java:257)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:45)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:35)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:241)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:205)
+	at model.MainInterfaceModel.editUserPwd(MainInterfaceModel.java:587)
+	at application.MainInterfaceController.editPassword(MainInterfaceController.java:1270)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 12, 2021 1:13:19 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 1:13:24 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 1:15:08 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 1:15:13 PM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 12, 2021 1:15:20 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 4:36:28 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 4:36:36 PM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 12, 2021 4:36:44 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 4:38:10 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 12, 2021 4:38:15 PM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 12, 2021 4:38:22 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 12, 2021 4:39:02 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:32:23 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:32:45 AM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 11:35:30 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:35:34 AM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 13, 2021 11:35:41 AM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 11:37:03 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:37:08 AM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 11:37:54 AM common.Log logFile
+INFO: WInter the Cat is registered into database.
+
+Jun 13, 2021 11:39:05 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:39:09 AM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 11:39:53 AM common.Log logFile
+INFO: Woof the Dog is registered into database.
+
+Jun 13, 2021 11:49:39 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:49:52 AM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 11:56:09 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:56:17 AM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 11:58:43 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:59:10 AM common.Log logFile
+INFO: qsqs the Cat is registered into database.
+
+Jun 13, 2021 12:05:56 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 12:06:02 PM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 13, 2021 12:06:08 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 12:07:46 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 12:07:50 PM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 13, 2021 12:07:56 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 12:08:18 PM common.Log logFile
+INFO: Owner with IC:990620105811has not pet
+
+Jun 13, 2021 12:08:18 PM common.Log logFile
+INFO: Pet Owner with IC: 990620105811 is deleted successfully!
+
+Jun 13, 2021 12:12:06 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 12:12:12 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 12:13:38 PM common.Log logFile
+INFO: Wynnie Voon is edited.
+
+Jun 13, 2021 12:15:44 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 12:15:51 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 12:16:56 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 12:17:00 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 12:18:11 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 12:18:15 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 12:19:53 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 12:20:00 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 12:20:29 PM common.Log logFile
+INFO: Wingates Voon is registered into database.
+
+Jun 13, 2021 12:20:41 PM common.Log logFile
+INFO: Owner with IC:990620105811has not pet
+
+Jun 13, 2021 12:20:41 PM common.Log logFile
+INFO: Pet Owner with IC: 990620105811 is deleted successfully!
+
+Jun 13, 2021 12:21:52 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:13:44 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:13:50 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:23:28 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:23:33 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:24:45 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:24:54 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:28:13 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:28:18 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:28:30 PM common.Log logFile
+INFO: Reminder email is sent
+
+Jun 13, 2021 2:30:03 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:30:09 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:38:41 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:38:46 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:39:07 PM common.Log logFile
+INFO: Reminder email is sent
+
+Jun 13, 2021 2:39:12 PM common.Log logFile
+INFO: Appointment is completed
+
+Jun 13, 2021 2:39:25 PM common.Log logFile
+INFO: Medication Record for petID: 9not found
+
+Jun 13, 2021 2:39:25 PM common.Log logFile
+INFO: Vaccination Record for petID: 9is successful
+
+Jun 13, 2021 2:39:25 PM common.Log logFile
+INFO: Pet Owner with IC: 971227105811 is deleted successfully!
+
+Jun 13, 2021 2:39:25 PM common.Log logFile
+INFO: Pet Owner with IC: 971227105811 upcoming appointments are deleted successfully!
+
+Jun 13, 2021 2:40:03 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:40:09 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:41:16 PM common.Log logFile
+INFO: Pet ID : 3 vaccination record is added into database.
+
+Jun 13, 2021 2:41:16 PM common.Log logFile
+INFO: Erica Lim's Nana is scheduled  for 3rd & Above injection 10 in 1 on 2021-07-13
+
+Jun 13, 2021 2:43:06 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:43:10 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:44:28 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:44:33 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:46:31 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:46:35 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:47:37 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:47:43 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:49:04 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:49:09 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:50:49 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:50:54 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 2:53:10 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 2:53:16 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:45:54 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 4:45:59 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:45:59 PM common.Log logFile
+SEVERE: 
+unknown path
+ for Voon
+
+javafx.fxml.LoadException: 
+unknown path
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+Caused by: java.lang.NullPointerException
+	at application.MainInterfaceController.initialize(MainInterfaceController.java:135)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	... 58 more
+
+Jun 13, 2021 4:46:29 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 4:46:33 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:47:38 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 4:47:42 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:48:39 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 4:48:44 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:50:13 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 4:50:17 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:51:15 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 4:51:20 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:58:57 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 4:59:01 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:59:40 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 4:59:48 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 4:59:53 PM common.Log logFile
+SEVERE: [SQLITE_ERROR] SQL error or missing database (near "VaccineName": syntax error)
+
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "VaccineName": syntax error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1012)
+	at org.sqlite.core.DB.newSQLException(DB.java:1024)
+	at org.sqlite.core.DB.throwex(DB.java:989)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:134)
+	at org.sqlite.core.DB.prepare(DB.java:257)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:45)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:35)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:241)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:205)
+	at model.MainInterfaceModel.addNewCatVac(MainInterfaceModel.java:736)
+	at application.MainInterfaceController.addNewVac(MainInterfaceController.java:1562)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 13, 2021 5:05:23 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 5:05:27 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 5:08:03 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 5:08:07 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 5:15:51 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 5:15:56 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 5:21:10 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 5:21:15 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 5:51:03 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 5:51:08 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 5:51:08 PM common.Log logFile
+SEVERE: Error resolving onAction='#selectVetPetType', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:583
+ for Voon
+
+javafx.fxml.LoadException: Error resolving onAction='#selectVetPetType', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:583
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 13, 2021 5:52:08 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 5:52:12 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 5:52:12 PM common.Log logFile
+SEVERE: Error resolving onAction='#selectVetPetType', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:584
+ for Voon
+
+javafx.fxml.LoadException: Error resolving onAction='#selectVetPetType', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:584
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 13, 2021 5:52:27 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 5:52:33 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 5:52:34 PM common.Log logFile
+SEVERE: Error resolving onAction='#selectVetPetType', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:584
+ for Voon
+
+javafx.fxml.LoadException: Error resolving onAction='#selectVetPetType', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:584
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 13, 2021 5:53:02 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 5:53:06 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 6:00:18 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:00:23 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 6:00:28 PM common.Log logFile
+INFO: Voon updated password successfully
+
+Jun 13, 2021 6:09:45 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:09:50 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 6:18:32 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:18:38 PM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 13, 2021 6:18:43 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 6:18:49 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 13, 2021 6:18:58 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 13, 2021 6:34:03 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:34:13 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 13, 2021 6:34:19 PM common.Log logFile
+INFO: Voon is deleted successfully
+
+Jun 13, 2021 6:34:19 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:34:23 PM common.Log logFile
+WARNING: Credential is invalid for Voon
+
+Jun 13, 2021 6:35:14 PM common.Log logFile
+INFO: wong log in successfully.
+
+Jun 13, 2021 6:35:17 PM common.Log logFile
+INFO: wong is deleted successfully
+
+Jun 13, 2021 6:35:17 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:35:26 PM common.Log logFile
+INFO: wing log in successfully.
+
+Jun 13, 2021 6:35:36 PM common.Log logFile
+INFO: test is registered successfully
+
+Jun 13, 2021 6:35:39 PM common.Log logFile
+INFO: wing is deleted successfully
+
+Jun 13, 2021 6:35:39 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:35:46 PM common.Log logFile
+INFO: vet log in successfully.
+
+Jun 13, 2021 6:35:50 PM common.Log logFile
+INFO: vet is deleted successfully
+
+Jun 13, 2021 6:35:50 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:35:55 PM common.Log logFile
+INFO: test log in successfully.
+
+Jun 13, 2021 6:36:08 PM common.Log logFile
+INFO: admin is registered successfully
+
+Jun 13, 2021 6:36:12 PM common.Log logFile
+INFO: test is deleted successfully
+
+Jun 13, 2021 6:36:12 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:36:15 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 6:41:34 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 6:41:40 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 6:42:11 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 13, 2021 6:42:17 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 13, 2021 6:42:22 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 13, 2021 6:42:27 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 13, 2021 6:43:21 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 13, 2021 6:43:27 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 13, 2021 6:43:31 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 13, 2021 6:43:35 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 13, 2021 10:04:45 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:04:54 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:06:17 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:06:25 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:19:45 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:19:49 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:20:06 PM common.Log logFile
+INFO: voon is registered successfully
+
+Jun 13, 2021 10:20:16 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:20:20 PM common.Log logFile
+INFO: voon log in successfully.
+
+Jun 13, 2021 10:20:26 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:20:30 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:45:35 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:45:39 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:46:01 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:46:07 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:46:07 PM common.Log logFile
+SEVERE: 
+unknown path:595
+ for admin
+
+javafx.fxml.LoadException: 
+unknown path:595
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.control.TableView field application.MainInterfaceController.tb_database to com.jfoenix.controls.JFXTreeTableView
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at javafx.fxml.FXMLLoader.injectFields(FXMLLoader.java:1163)
+	at javafx.fxml.FXMLLoader.access$1600(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$ValueElement.processValue(FXMLLoader.java:857)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:751)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	... 58 more
+
+Jun 13, 2021 10:46:47 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:46:51 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:46:51 PM common.Log logFile
+SEVERE: 
+unknown path:595
+ for admin
+
+javafx.fxml.LoadException: 
+unknown path:595
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+Caused by: java.lang.IllegalArgumentException: Can not set javafx.scene.control.TableView field application.MainInterfaceController.tb_database to com.jfoenix.controls.JFXTreeTableView
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at javafx.fxml.FXMLLoader.injectFields(FXMLLoader.java:1163)
+	at javafx.fxml.FXMLLoader.access$1600(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$ValueElement.processValue(FXMLLoader.java:857)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:751)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	... 58 more
+
+Jun 13, 2021 10:47:47 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:48:07 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:48:11 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:49:07 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:49:33 PM common.Log logFile
+WARNING: Credential is invalid for test
+
+Jun 13, 2021 10:50:12 PM common.Log logFile
+INFO: voon log in successfully.
+
+Jun 13, 2021 10:51:20 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 10:51:23 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 10:51:40 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 13, 2021 10:51:47 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 13, 2021 11:00:55 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:01:00 PM common.Log logFile
+WARNING: Credential is invalid for admin
+
+Jun 13, 2021 11:01:05 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:01:40 PM common.Log logFile
+INFO: unable to show table
+
+Jun 13, 2021 11:01:47 PM common.Log logFile
+INFO: unable to show table
+
+Jun 13, 2021 11:03:53 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:03:58 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:03:59 PM common.Log logFile
+INFO: unable to show table
+
+Jun 13, 2021 11:04:40 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:04:44 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:04:46 PM common.Log logFile
+INFO: unable to show table
+
+Jun 13, 2021 11:04:53 PM common.Log logFile
+INFO: unable to show table
+
+Jun 13, 2021 11:05:07 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:05:12 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:05:13 PM common.Log logFile
+INFO: unable to show table
+
+Jun 13, 2021 11:06:04 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:06:09 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:07:01 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:07:04 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:14:14 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:14:19 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:14:19 PM common.Log logFile
+SEVERE: Error resolving onAction='#viewTable', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:594
+ for admin
+
+javafx.fxml.LoadException: Error resolving onAction='#viewTable', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:594
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 13, 2021 11:14:38 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:14:42 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:14:42 PM common.Log logFile
+SEVERE: Error resolving onAction='#viewTable', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:594
+ for admin
+
+javafx.fxml.LoadException: Error resolving onAction='#viewTable', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:594
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 13, 2021 11:15:12 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:15:19 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:15:19 PM common.Log logFile
+SEVERE: Error resolving onAction='#viewTable', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:594
+ for admin
+
+javafx.fxml.LoadException: Error resolving onAction='#viewTable', either the event handler is not in the Namespace or there is an error in the script.
+unknown path:594
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2425)
+	at application.LoginController.login(LoginController.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 13, 2021 11:15:44 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:15:48 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:16:12 PM common.Log logFile
+INFO: ronge the Dog is registered into database.
+
+Jun 13, 2021 11:19:35 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:19:38 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:21:14 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:21:17 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:23:28 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:23:33 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:23:56 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:23:59 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:32:37 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:32:42 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:33:34 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:33:38 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:35:14 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:35:19 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:37:04 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 13, 2021 11:37:08 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 13, 2021 11:39:24 PM common.Log logFile
+INFO: Wingates Voon is registered into database.
+
+Jun 14, 2021 10:50:43 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 10:50:50 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 10:54:34 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 10:54:39 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 10:55:28 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 10:55:33 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 10:56:59 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 10:57:02 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:25:43 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:25:47 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:26:45 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:26:47 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:27:00 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:27:51 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:27:56 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:29:49 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:29:57 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:30:27 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:30:30 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:32:28 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:36:12 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:37:54 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:37:58 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:38:35 AM common.Log logFile
+INFO: Rocky the Dog is registered into database.
+
+Jun 14, 2021 11:38:53 AM common.Log logFile
+INFO: Pet ID : 15 vaccination record is added into database.
+
+Jun 14, 2021 11:38:53 AM common.Log logFile
+INFO: Wingates Voon's Rocky is scheduled  for 2nd injection Rabies on 2021-07-14
+
+Jun 14, 2021 11:40:05 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:40:08 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:40:43 AM common.Log logFile
+INFO: Pet ID : 3 vaccination record is added into database.
+
+Jun 14, 2021 11:40:43 AM common.Log logFile
+INFO: Erica Lim's Nana is scheduled  for 3rd & Above injection 9 in 1 on 2022-06-14
+
+Jun 14, 2021 11:42:44 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:42:48 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:43:23 AM common.Log logFile
+INFO: Pet ID : 3 vaccination record is added into database.
+
+Jun 14, 2021 11:43:23 AM common.Log logFile
+INFO: Erica Lim's Nana is scheduled  for 2nd injection Rabies on 2021-07-14
+
+Jun 14, 2021 11:44:03 AM common.Log logFile
+INFO: Pet ID : 15 vaccination record is added into database.
+
+Jun 14, 2021 11:44:03 AM common.Log logFile
+INFO: Wingates Voon's Rocky is scheduled  for 3rd & Above injection Rabies on 2021-07-14
+
+Jun 14, 2021 11:46:40 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:51:20 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:51:24 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:52:02 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:52:06 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:52:36 AM common.Log logFile
+INFO: Pet ID : 14 vaccination record is added into database.
+
+Jun 14, 2021 11:52:36 AM common.Log logFile
+INFO: Erica Lim's ronge is scheduled  for 3rd & Above injection Rabies on 2021-07-14
+
+Jun 14, 2021 11:55:29 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:55:33 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:56:17 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:56:20 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:57:13 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:57:17 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 11:58:25 AM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 11:58:29 AM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:18:14 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:18:18 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:18:20 PM common.Log logFile
+SEVERE: Query returns results
+
+java.sql.SQLException: Query returns results
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:92)
+	at model.MainInterfaceModel.deleteAll(MainInterfaceModel.java:1052)
+	at application.MainInterfaceController.resetDatabase(MainInterfaceController.java:1937)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 14, 2021 12:19:58 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 14, 2021 12:20:02 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 14, 2021 12:20:46 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:20:49 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:20:54 PM common.Log logFile
+SEVERE: [SQLITE_ERROR] SQL error or missing database (near "*": syntax error)
+
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "*": syntax error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1012)
+	at org.sqlite.core.DB.newSQLException(DB.java:1024)
+	at org.sqlite.core.DB.throwex(DB.java:989)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:134)
+	at org.sqlite.core.DB.prepare(DB.java:257)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:45)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:35)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:241)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:205)
+	at model.MainInterfaceModel.deleteAll(MainInterfaceModel.java:1049)
+	at application.MainInterfaceController.resetDatabase(MainInterfaceController.java:1937)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 14, 2021 12:21:45 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:21:49 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:21:55 PM common.Log logFile
+SEVERE: [SQLITE_ERROR] SQL error or missing database (near "*": syntax error)
+
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "*": syntax error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1012)
+	at org.sqlite.core.DB.newSQLException(DB.java:1024)
+	at org.sqlite.core.DB.throwex(DB.java:989)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:134)
+	at org.sqlite.core.DB.prepare(DB.java:257)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:45)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:35)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:241)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:205)
+	at model.MainInterfaceModel.deleteAll(MainInterfaceModel.java:1049)
+	at application.MainInterfaceController.resetDatabase(MainInterfaceController.java:1937)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 14, 2021 12:22:33 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:22:37 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:27:08 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:27:12 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:27:14 PM common.Log logFile
+SEVERE: [SQLITE_ERROR] SQL error or missing database (near "*": syntax error)
+
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "*": syntax error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1012)
+	at org.sqlite.core.DB.newSQLException(DB.java:1024)
+	at org.sqlite.core.DB.throwex(DB.java:989)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:134)
+	at org.sqlite.core.DB.prepare(DB.java:257)
+	at org.sqlite.core.CorePreparedStatement.<init>(CorePreparedStatement.java:45)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.<init>(JDBC3PreparedStatement.java:30)
+	at org.sqlite.jdbc4.JDBC4PreparedStatement.<init>(JDBC4PreparedStatement.java:25)
+	at org.sqlite.jdbc4.JDBC4Connection.prepareStatement(JDBC4Connection.java:35)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:241)
+	at org.sqlite.jdbc3.JDBC3Connection.prepareStatement(JDBC3Connection.java:205)
+	at model.MainInterfaceModel.deleteAll(MainInterfaceModel.java:1052)
+	at application.MainInterfaceController.resetDatabase(MainInterfaceController.java:1937)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 14, 2021 12:27:53 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:28:00 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:28:02 PM common.Log logFile
+SEVERE: 0
+
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at org.sqlite.core.CorePreparedStatement.batch(CorePreparedStatement.java:106)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.setString(JDBC3PreparedStatement.java:411)
+	at model.MainInterfaceModel.deleteAll(MainInterfaceModel.java:1053)
+	at application.MainInterfaceController.resetDatabase(MainInterfaceController.java:1937)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 14, 2021 12:29:02 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:29:06 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:32:30 PM common.Log logFile
+INFO: Wing Voon is registered into database.
+
+Jun 14, 2021 12:32:43 PM common.Log logFile
+INFO: wdwd the Dog is registered into database.
+
+Jun 14, 2021 12:34:27 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:34:30 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:34:47 PM common.Log logFile
+INFO: Pet ID : 16 vaccination record is added into database.
+
+Jun 14, 2021 12:34:47 PM common.Log logFile
+INFO: Wing Voon's wdwd is scheduled  for 2nd injection 6 in 1 on 2021-07-14
+
+Jun 14, 2021 12:40:30 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:40:36 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:44:11 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 12:44:15 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 12:44:33 PM common.Log logFile
+INFO: 2e2 wdqw is registered into database.
+
+Jun 14, 2021 12:44:41 PM common.Log logFile
+INFO: wdw the Dog is registered into database.
+
+Jun 14, 2021 12:44:52 PM common.Log logFile
+INFO: Database Reset Successful.
+
+Jun 14, 2021 2:33:52 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 2:33:57 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 2:34:16 PM common.Log logFile
+INFO: Database Reset Not Successful.
+
+Jun 14, 2021 2:35:37 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 2:55:24 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 2:55:30 PM common.Log logFile
+WARNING: Credential is invalid for admijn
+
+Jun 14, 2021 2:55:34 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 2:55:55 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 14, 2021 2:56:02 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 14, 2021 2:56:16 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 14, 2021 2:56:19 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 14, 2021 2:56:24 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 14, 2021 2:56:29 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 14, 2021 2:56:35 PM common.Log logFile
+INFO: test is added successfully
+
+Jun 14, 2021 2:56:39 PM common.Log logFile
+INFO: test deleted successfully
+
+Jun 14, 2021 2:56:49 PM common.Log logFile
+WARNING: Database Reset Not Successful.
+
+Jun 14, 2021 2:57:06 PM common.Log logFile
+INFO: admin updated password successfully
+
+Jun 14, 2021 2:57:23 PM common.Log logFile
+INFO: admin updated password successfully
+
+Jun 14, 2021 3:00:33 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:00:38 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:00:45 PM common.Log logFile
+INFO: admin attempt to change admin password
+
+Jun 14, 2021 3:01:32 PM common.Log logFile
+INFO: admin attempt to delete admin user.
+
+Jun 14, 2021 3:02:21 PM common.Log logFile
+INFO: Voon is registered successfully
+
+Jun 14, 2021 3:02:25 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:02:29 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 14, 2021 3:06:39 PM common.Log logFile
+INFO: Wingates Voon is registered into database.
+
+Jun 14, 2021 3:06:55 PM common.Log logFile
+INFO: Rocky the Dog is registered into database.
+
+Jun 14, 2021 3:07:07 PM common.Log logFile
+INFO: Pet ID : 18 vaccination record is added into database.
+
+Jun 14, 2021 3:07:07 PM common.Log logFile
+INFO: Wingates Voon's Rocky is scheduled  for 2nd injection 6 in 1 on 2021-07-14
+
+Jun 14, 2021 3:07:35 PM common.Log logFile
+INFO: Pet ID : 18 medication record is added into database.
+
+Jun 14, 2021 3:08:56 PM common.Log logFile
+INFO: Wingates Voon is edited.
+
+Jun 14, 2021 3:09:06 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:09:09 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:10:55 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:10:58 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:11:40 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:11:46 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:11:49 PM common.Log logFile
+SEVERE: For input string: "13 "
+
+java.lang.NumberFormatException: For input string: "13 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at application.MainInterfaceController.goToAppointmentInfo(MainInterfaceController.java:1357)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3470)
+	at javafx.scene.Scene$ClickGenerator.access$8100(Scene.java:3398)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3766)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 14, 2021 3:12:14 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:12:19 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:20:53 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:21:00 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:21:26 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:21:30 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:22:19 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:22:25 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:22:28 PM common.Log logFile
+SEVERE: For input string: "13 "
+
+java.lang.NumberFormatException: For input string: "13 "
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at application.MainInterfaceController.goToAppointmentInfo(MainInterfaceController.java:1358)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3470)
+	at javafx.scene.Scene$ClickGenerator.access$8100(Scene.java:3398)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3766)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 14, 2021 3:22:57 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:23:00 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:24:21 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:24:38 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:26:22 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:26:26 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:26:42 PM common.Log logFile
+INFO: Reminder email is sent
+
+Jun 14, 2021 3:26:58 PM common.Log logFile
+INFO: Appointment date is updated
+
+Jun 14, 2021 3:43:25 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:43:31 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:44:26 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:44:29 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:45:02 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:45:06 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:45:25 PM common.Log logFile
+INFO: Voon updated password successfully
+
+Jun 14, 2021 3:45:35 PM common.Log logFile
+INFO: Voon updated password successfully
+
+Jun 14, 2021 3:45:44 PM common.Log logFile
+INFO: admin attempt to change admin password
+
+Jun 14, 2021 3:46:21 PM common.Log logFile
+INFO: voon updated password successfully
+
+Jun 14, 2021 3:46:47 PM common.Log logFile
+INFO: voon updated password successfully
+
+Jun 14, 2021 3:47:10 PM common.Log logFile
+INFO: Wing is registered successfully
+
+Jun 14, 2021 3:55:36 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:55:41 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:56:12 PM common.Log logFile
+INFO: wong is registered successfully
+
+Jun 14, 2021 3:56:19 PM common.Log logFile
+INFO: admin attempt to delete admin user.
+
+Jun 14, 2021 3:56:49 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:56:52 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 3:57:04 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:57:09 PM common.Log logFile
+INFO: wong log in successfully.
+
+Jun 14, 2021 3:57:13 PM common.Log logFile
+INFO: wong is deleted successfully
+
+Jun 14, 2021 3:57:13 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:57:20 PM common.Log logFile
+INFO: voon log in successfully.
+
+Jun 14, 2021 3:57:24 PM common.Log logFile
+INFO: voon is deleted successfully
+
+Jun 14, 2021 3:57:24 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 3:57:28 PM common.Log logFile
+WARNING: Credential is invalid for Wing
+
+Jun 14, 2021 3:57:34 PM common.Log logFile
+INFO: Wing log in successfully.
+
+Jun 14, 2021 3:57:39 PM common.Log logFile
+INFO: Wing is deleted successfully
+
+Jun 14, 2021 3:57:39 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 4:00:09 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 4:00:12 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 4:00:19 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 4:00:22 PM common.Log logFile
+WARNING: Credential is invalid for admin
+
+Jun 14, 2021 4:00:30 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 4:01:25 PM common.Log logFile
+INFO: admin attempt to delete admin user.
+
+Jun 14, 2021 4:02:09 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 4:06:14 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 4:06:19 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 4:06:28 PM common.Log logFile
+INFO: Database Reset Successful.
+
+Jun 14, 2021 4:06:38 PM common.Log logFile
+INFO: Connected to SQLite database
+

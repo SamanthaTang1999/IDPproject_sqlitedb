@@ -1,7 +1,8 @@
 package model;
 
 import java.sql.*;
-
+import java.util.ArrayList;
+import java.util.List;
 import common.Log;
 import common.MedicationRecord;
 import common.SqliteConnection;
@@ -215,6 +216,8 @@ public Log log = new Log();
 		
 		
 	}
+	
+	
 	
 	public Integer getPetID(Integer ownerID, String petName, String petType) throws SQLException{
 			
@@ -504,11 +507,630 @@ public Log log = new Log();
 	}
 	
 	
+public boolean registerNewUser(String userName, String pwd) throws SQLException {
+		
+		PreparedStatement preparedStatement = null;
+		String query = "INSERT into users (UserName, Password) values (?, ?)";
+		
+		try {
+				preparedStatement = connection.prepareStatement(query);
+				preparedStatement.setString(1, userName);
+				preparedStatement.setString(2, pwd);
+				
+				
+				
+			if (preparedStatement.executeUpdate() == 1) {		
+			
+				return true;
+				
+				
+			}
+			else {
+				
+				return false;
+			}
+		
+		
+			
+		} catch (Exception e) {
+			log.logFile(e, "severe", e.getMessage());
+			e.printStackTrace();
+			return false;
+			
+		}
+		
+		finally {
+			preparedStatement.close();
+			
+		}
+	}
+
+public String getUserPwd(String userName) throws SQLException{
+	
+	PreparedStatement preparedStatement = null;
+	ResultSet resultSet = null;
+	String query = "SELECT Password FROM users WHERE UserName = ? ";
+	String pwd = null;
+	
+	try {
+		preparedStatement = connection.prepareStatement(query);
+		preparedStatement.setString(1, userName);
+		resultSet = preparedStatement.executeQuery();
+		
+		while (resultSet.next()) {
+			
+			 pwd = resultSet.getString("Password");
+			
+			
+		}
+		
+		return pwd;
+		
+	
+} catch (Exception e) {
+	log.logFile(e, "severe", e.getMessage());
+	e.printStackTrace();
+	return null;
+}
+
+finally {
+	preparedStatement.close();
+	resultSet.close();
+}
 	
 	
+}
+
+public boolean editUserPwd(String userName, String new_pf) throws SQLException {
+	
+	PreparedStatement preparedStatement = null;
+	String query = "UPDATE users set Password = ? WHERE UserName = ?";
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, new_pf);
+			preparedStatement.setString(2, userName);
+			
+			
+			
+		if (preparedStatement.executeUpdate() == 1) {		
+		
+			return true;	
+			
+		}
+		else {
+			
+			return false;
+		}
 	
 	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+
+public ObservableList<String> getUserList() throws SQLException {
+	
+	PreparedStatement preparedStatement = null;
+	ResultSet resultSet = null;
+	String query = "SELECT * FROM users";
+	  ObservableList<String> userList = FXCollections.observableArrayList();
 	
 	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			resultSet = preparedStatement.executeQuery();
+			
+			while (resultSet.next()) {
+				
+				userList.add(resultSet.getString("UserName"));
+				
+			}
+	
+	
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		resultSet.close();
+	}
+		
+		return userList;
+		
+		
+	}
+
+public boolean deleteUser(String userName) throws SQLException {
+	PreparedStatement preparedStatement = null;
+	String query = "DELETE from users WHERE UserName = ? ";
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, userName);
+			
+			
+		if (preparedStatement.executeUpdate() == 0) {	
+
+			return false;
+			
+			
+		}
+		else {
+			
+			return true;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+
+public boolean deleteOwnerInfo(Integer ownerID) throws SQLException {
+	PreparedStatement preparedStatement = null;
+	String query = "DELETE from owners WHERE OwnerID = ?";
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setInt(1, ownerID);
+			
+			
+		if (preparedStatement.executeUpdate() == 0) {	
+
+			return false;
+			
+			
+		}
+		else {
+			
+			return true;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+
+public List<Integer> getAllPetID(Integer ownerID) throws SQLException{
+	
+	PreparedStatement preparedStatement = null;
+	ResultSet resultSet = null;
+	String query = " SELECT PetID FROM pets WHERE OwnerID = ? ";
+	List<Integer> id = new ArrayList<>();
+	
+	try {
+		preparedStatement = connection.prepareStatement(query);
+		preparedStatement.setInt(1, ownerID);
+		
+		resultSet = preparedStatement.executeQuery();
+		
+		while (resultSet.next()) {
+			
+			// id = resultSet.getInt("PetID");
+			id.add(resultSet.getInt("PetID"));
+			
+		}
+		
+		return id;
+		
+	
+} catch (Exception e) {
+	log.logFile(e, "severe", e.getMessage());
+	e.printStackTrace();
+	return null;
+}
+
+finally {
+	preparedStatement.close();
+	resultSet.close();
+}
+	
+	
+}
+
+public boolean deleteOwnerAppointment(Integer ownerID) throws SQLException {
+	PreparedStatement preparedStatement = null;
+	String query = "DELETE from upcoming_appointments WHERE (OwnerID = ? AND Status = ? )";
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setInt(1, ownerID);
+			preparedStatement.setString(2, "Confirmed");
+			
+			
+		if (preparedStatement.executeUpdate() == 0) {	
+
+			return false;
+			
+			
+		}
+		else {
+			
+			return true;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+	
+public boolean addNewCatVac(String vac) throws SQLException {
+	
+	PreparedStatement preparedStatement = null;
+	String query = "INSERT into vaccine_cat (VaccineName) values (?)";
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, vac);
+		
+			
+		if (preparedStatement.executeUpdate() == 1) {		
+		
+			return true;
+			
+			
+		}
+		else {
+			
+			return false;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+	
+public boolean addNewDogVac(String vac) throws SQLException {
+	
+	PreparedStatement preparedStatement = null;
+	String query = "INSERT into vaccine_dog (VaccineName) values (?)";
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, vac);
+		
+			
+		if (preparedStatement.executeUpdate() == 1) {		
+		
+			return true;
+			
+			
+		}
+		else {
+			
+			return false;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+
+public boolean deleteCatVac(String vac) throws SQLException {
+	PreparedStatement preparedStatement = null;
+	String query = "DELETE from vaccine_cat WHERE VaccineName = ? ";
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, vac);
+			
+			
+		if (preparedStatement.executeUpdate() == 0) {	
+
+			return false;
+			
+			
+		}
+		else {
+			
+			return true;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+
+public boolean deleteDogVac(String vac) throws SQLException {
+	PreparedStatement preparedStatement = null;
+	String query = "DELETE from vaccine_dog WHERE VaccineName = ? ";
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, vac);
+			
+			
+		if (preparedStatement.executeUpdate() == 0) {	
+
+			return false;
+			
+			
+		}
+		else {
+			
+			return true;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+
+public boolean addNewBreed(String breed, Boolean isCat) throws SQLException {
+	
+	PreparedStatement preparedStatement = null;
+	String query = "";
+	if (isCat) {
+		 query = "INSERT into breed_cat (BreedName) values (?)";
+	}
+	
+	else {
+		query = "INSERT into breed_dog (BreedName) values (?)";
+	}
+	
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, breed);
+		
+			
+		if (preparedStatement.executeUpdate() == 1) {		
+		
+			return true;
+			
+			
+		}
+		else {
+			
+			return false;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+
+public boolean deleteBreed(String breed, Boolean isCat) throws SQLException {
+	PreparedStatement preparedStatement = null;
+	String query = "";
+	if (isCat) {
+		query = "DELETE from breed_cat WHERE BreedName = ? ";
+	}
+	else {
+		query = "DELETE from breed_dog WHERE BreedName = ? ";
+	}
+	
+	
+	try {
+			preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, breed);
+			
+		if (preparedStatement.executeUpdate() == 0) {	
+
+			return false;
+			
+			
+		}
+		else {
+			
+			return true;
+		}
+	
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return false;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
+
+public ResultSet getTable(Boolean isOwner) {
+	
+	String query = "";
+	
+	if (isOwner) {
+		query = "SELECT * FROM owners";
+	}
+	
+	else {
+		query = "SELECT * FROM pets";
+	}
+	
+
+	try {
+			ResultSet rs = connection.createStatement().executeQuery(query);
+			
+	return rs;
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return null;
+		
+	}
+	
+	
+}
+
+public ResultSet getRecord(Boolean isVac) {
+	
+	String query = "";
+	
+	if (isVac) {
+		query = "SELECT * FROM vaccine_records";
+	}
+	
+	else {
+		query = "SELECT * FROM medication_records";
+	}
+	
+
+	try {
+			ResultSet rs = connection.createStatement().executeQuery(query);
+			
+	return rs;
+	
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return null;
+		
+	}
+	
+	
+}
+
+public ResultSet getPieChartData() {
+	
+	String query = "select Vaccine, count(Vaccine) from vaccine_records group by Vaccine";
+	
+	try {
+		ResultSet rs = connection.createStatement().executeQuery(query);
+		return rs;
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return null;
+	}
+	
+}
+	
+public Integer deleteAll() throws SQLException {
+	PreparedStatement preparedStatement = null;
+	int count = 0;
+	String [] queries = {"DELETE FROM owners",
+						 "DELETE FROM pets",
+						 "DELETE FROM upcoming_appointments",
+						 "DELETE FROM vaccine_records",
+						 "DELETE FROM medication_records"};
+	
+	try {
+		
+		for(String query:queries)
+		{
+			preparedStatement = connection.prepareStatement(query);
+			
+			
+			if (preparedStatement.executeUpdate() != 0) {
+				count++;
+			}
+		
+		}
+			
+	return count;
+		
+	} catch (Exception e) {
+		log.logFile(e, "severe", e.getMessage());
+		e.printStackTrace();
+		return null;
+		
+	}
+	
+	finally {
+		preparedStatement.close();
+		
+	}
+}
 
 }

@@ -44,6 +44,11 @@ public class LoginController implements Initializable {
 		
 	}
 	
+	@FXML
+	public void onEnter(ActionEvent event){
+	   login(event);
+	}
+	
 	public void login(ActionEvent event) {
 		
 		try {

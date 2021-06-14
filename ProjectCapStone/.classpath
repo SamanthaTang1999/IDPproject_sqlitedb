@@ -9,6 +9,6 @@
 	<classpathentry kind="lib" path="mail_lib/fontawesomefx-commons-8.15.jar"/>
 	<classpathentry kind="lib" path="mail_lib/fontawesomefx-fontawesome-4.7.0-5.jar"/>
 	<classpathentry kind="lib" path="mail_lib/fontawesomefx-8.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/End User/Downloads/sqlite-jdbc-3.34.0.jar"/>
+	<classpathentry kind="lib" path="mail_lib/sqlite-jdbc-3.34.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
