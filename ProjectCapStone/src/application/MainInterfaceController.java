@@ -1430,16 +1430,17 @@ public class MainInterfaceController implements Initializable {
 	
 	public void editPassword(ActionEvent event) throws SQLException
 	{
-		String userName = listView_users.getSelectionModel().getSelectedItem();
-		
-		if (userName.isEmpty()) {
+		if (listView_users.getSelectionModel().isEmpty()) {
+			
 			 Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Program says");
 				alert.setHeaderText("To edit password, please select user from list, retype old password and new password");
 				alert.show();
 				return;
-			
 		}
+		String userName = listView_users.getSelectionModel().getSelectedItem();
+		
+	
 		
 		if (pf_oldPF.getText().isEmpty() || pf_editPF.getText().isEmpty()) {
 			 Alert alert = new Alert(AlertType.ERROR);

@@ -4728,3 +4728,21 @@ INFO: Database Reset Successful.
 Jun 14, 2021 4:06:38 PM common.Log logFile
 INFO: Connected to SQLite database
 
+Jun 14, 2021 4:50:28 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 4:50:36 PM common.Log logFile
+INFO: Voon log in successfully.
+
+Jun 14, 2021 4:52:42 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 4:52:45 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 4:53:06 PM common.Log logFile
+INFO: Voon updated password successfully
+
+Jun 14, 2021 4:53:12 PM common.Log logFile
+INFO: admin attempt to change admin password
+
