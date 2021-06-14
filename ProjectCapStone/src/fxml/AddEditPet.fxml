@@ -39,6 +39,7 @@
                   </RadioButton>
                   <RadioButton fx:id="radioButton_cat" mnemonicParsing="false" onAction="#selectPetTypeRadioButton" text="Cat" textFill="#707c80" toggleGroup="$petType" />
                   <RadioButton fx:id="radioButton_other" mnemonicParsing="false" onAction="#selectPetTypeRadioButton" text="Others" textFill="#707c80" toggleGroup="$petType" />
+                  <JFXTextField fx:id="tf_otherBreed" prefHeight="27.0" prefWidth="47.0" promptText="Breed" />
                </children>
             </HBox>
             <JFXComboBox fx:id="comboBox_breed" focusColor="#3fd2c7" labelFloat="true" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" promptText="Breed" unFocusColor="#707c80" />
