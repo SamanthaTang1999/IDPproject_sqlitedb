@@ -4746,3 +4746,168 @@ INFO: Voon updated password successfully
 Jun 14, 2021 4:53:12 PM common.Log logFile
 INFO: admin attempt to change admin password
 
+Jun 14, 2021 4:55:45 PM common.Log logFile
+INFO: admin attempt to delete admin user.
+
+Jun 14, 2021 4:55:56 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 5:21:40 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 5:21:46 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 5:22:19 PM common.Log logFile
+INFO: wiwdw w12w2 is registered into database.
+
+Jun 14, 2021 5:22:28 PM common.Log logFile
+INFO:  the Dog is registered into database.
+
+Jun 14, 2021 5:23:59 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 5:24:03 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 5:25:39 PM common.Log logFile
+INFO: eefee the Cat is registered into database.
+
+Jun 14, 2021 5:26:38 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 5:26:51 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 5:28:41 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 5:29:03 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 5:38:58 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 5:39:06 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 5:39:30 PM common.Log logFile
+INFO: e2e2 wdwd is registered into database.
+
+Jun 14, 2021 5:39:52 PM common.Log logFile
+INFO: efefef efefe is registered into database.
+
+Jun 14, 2021 5:40:05 PM common.Log logFile
+SEVERE: [SQLITE_CONSTRAINT_UNIQUE]  A UNIQUE constraint failed (UNIQUE constraint failed: owners.IcNumber)
+
+org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_UNIQUE]  A UNIQUE constraint failed (UNIQUE constraint failed: owners.IcNumber)
+	at org.sqlite.core.DB.newSQLException(DB.java:1012)
+	at org.sqlite.core.DB.newSQLException(DB.java:1024)
+	at org.sqlite.core.DB.execute(DB.java:863)
+	at org.sqlite.core.DB.executeUpdate(DB.java:904)
+	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:98)
+	at model.MainInterfaceModel.addOwnerInfo(MainInterfaceModel.java:46)
+	at application.MainInterfaceController.saveOwnerInfo(MainInterfaceController.java:358)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8411)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:397)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:434)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:410)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:433)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:941)
+	at com.sun.glass.ui.mac.MacView.notifyMouse(MacView.java:127)
+
+Jun 14, 2021 9:17:23 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 9:17:28 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 9:17:56 PM common.Log logFile
+INFO: lucky the Others is registered into database.
+
+Jun 14, 2021 9:19:06 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 9:19:11 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 9:19:55 PM common.Log logFile
+INFO: wdwdw the Cat is registered into database.
+
+Jun 14, 2021 9:20:21 PM common.Log logFile
+INFO: Database Reset Successful.
+
+Jun 14, 2021 9:21:59 PM common.Log logFile
+INFO: wdwdw wdwd is registered into database.
+
+Jun 14, 2021 9:22:11 PM common.Log logFile
+INFO: wdwdwd the Others is registered into database.
+
+Jun 14, 2021 9:25:53 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 9:25:56 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 9:27:45 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 14, 2021 9:27:49 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 14, 2021 9:27:53 PM common.Log logFile
+INFO: Database Reset Successful.
+

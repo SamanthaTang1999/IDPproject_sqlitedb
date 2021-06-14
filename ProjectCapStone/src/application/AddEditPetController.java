@@ -1,7 +1,9 @@
 package application;
 
+import java.net.URL;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.ResourceBundle;
 
 import common.ComboBoxAutoComplete;
 import common.Log;
@@ -10,6 +12,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
@@ -21,11 +24,12 @@ import javafx.scene.control.RadioButton;
 import model.AddEditPetModel;
 import model.MainInterfaceModel;
 
-public class AddEditPetController {
+public class AddEditPetController implements Initializable {
 	
 	@FXML private Label label_petInfo;
 	
 	@FXML private TextField textField_petName;
+	@FXML private TextField tf_otherBreed;
 	@FXML private ComboBox<String> comboBox_breed;
 	
 	@FXML private RadioButton radioButton_dog;
@@ -147,6 +151,8 @@ public class AddEditPetController {
 	public void selectPetTypeRadioButton(ActionEvent event) throws SQLException {
 		
 		if (radioButton_dog.isSelected()) {
+			comboBox_breed.setVisible(true);
+			tf_otherBreed.setVisible(false);
 			ObservableList<String> breedList = model.getDogBreedList();
 			if (!breedList.isEmpty()) {
 				comboBox_breed.setItems(breedList);
@@ -155,6 +161,8 @@ public class AddEditPetController {
 		}
 		
 			else if (radioButton_cat.isSelected()) {
+				comboBox_breed.setVisible(true);
+				tf_otherBreed.setVisible(false);
 				ObservableList<String> breedList = model.getCatBreedList();
 				if (!breedList.isEmpty()) {
 					comboBox_breed.setItems(breedList);
@@ -163,11 +171,10 @@ public class AddEditPetController {
 			}
 			
 				else  {
-					ObservableList<String> breedList =  FXCollections.observableArrayList("Others");
-					if (!breedList.isEmpty()) {
-						comboBox_breed.setItems(breedList);
-						new ComboBoxAutoComplete<String>(comboBox_breed);
-					}
+					
+					comboBox_breed.setVisible(false);
+					tf_otherBreed.setVisible(true);
+					
 				}
 	}
 	
@@ -175,24 +182,28 @@ public class AddEditPetController {
 	public void savePetInfo(ActionEvent event) {
 		
 		String petName = textField_petName.getText().trim();
-		String breed = comboBox_breed.getValue();
+		String breed = "";
 		String petType = "";
 		String gender = "";
 		String dob = "";
 		String neutered = "";
 		
 		try {
+				
 			
 				if (radioButton_dog.isSelected()) {
 					petType = radioButton_dog.getText();
+					breed = comboBox_breed.getValue();
 				}
 				
 				if (radioButton_cat.isSelected()) {
 					petType = radioButton_cat.getText();
+					breed = comboBox_breed.getValue();
 				}
 				
 				if (radioButton_other.isSelected()) {
 					petType = radioButton_other.getText();
+					breed = tf_otherBreed.getText();
 				}
 				
 				if (radioButton_male.isSelected()) {
@@ -220,11 +231,10 @@ public class AddEditPetController {
 					alert.show();
 					return;
 				}
-				dob = lDate.toString();
 				
-					
+				dob = lDate.toString();
 			
-			if (petName == null || breed == null || petType == null || gender == null || neutered== null) {
+			if (petName.isEmpty() || breed.isEmpty() || petType.isEmpty() || gender.isEmpty() || neutered.isEmpty()) {
 				
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Program says");
@@ -294,6 +304,12 @@ public class AddEditPetController {
 			e.printStackTrace();
 		}
 		
+		
+	}
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		tf_otherBreed.setVisible(false);
 		
 	}
 

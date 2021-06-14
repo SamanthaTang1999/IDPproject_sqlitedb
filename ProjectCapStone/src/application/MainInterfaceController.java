@@ -345,7 +345,7 @@ public class MainInterfaceController implements Initializable {
 				return;
 			}
 			
-			if (isNumeric(pNumber) == false || pNumber.length() != 10) {				// validate phone number
+			if (isNumeric(pNumber) == false || pNumber.length() < 10 || pNumber.length() > 11) {				// validate phone number
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Program says");
 				alert.setHeaderText("Phone Number is invalid.");
@@ -1043,6 +1043,15 @@ public class MainInterfaceController implements Initializable {
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.setTitle("Program says");
 			alert.setHeaderText("Pet Owner IC is missing.");
+			alert.show();
+			return;
+		}
+		
+		if (petType.contentEquals("Others")) {		
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("Program says");
+			alert.setHeaderText("Feature not supported!");
+			alert.setContentText("Vaccination record feature is not supported with other pet type.");
 			alert.show();
 			return;
 		}
