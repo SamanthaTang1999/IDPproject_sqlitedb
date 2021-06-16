@@ -137,6 +137,9 @@ public class MainInterfaceController implements Initializable {
 	 
 	 @FXML private PieChart pieChart;
 	 @FXML private Label label_pieChartNumber;
+	 @FXML private Label label_ownerNo;
+	 @FXML private Label label_appointmentNo;
+	 @FXML private Label label_completeAppNo;
 	
 	
 	
@@ -268,12 +271,13 @@ public class MainInterfaceController implements Initializable {
 		
 	}
 	
-	public void goToStatistics(ActionEvent event) 
+	public void goToStatistics(ActionEvent event) throws SQLException, InterruptedException 
 	{
 		if(!tabPane.getTabs().contains(statistics)) { 
 			   tabPane.getTabs().add(statistics);   
 			  }
 		 tabPane.getSelectionModel().select(statistics);
+		 
 		 pieChart.getData().clear();
 		 buildPieChart();
 		
@@ -296,6 +300,20 @@ public class MainInterfaceController implements Initializable {
 				});
 				
 			}
+			if (model.getOwnerNumbers() != null) {
+				
+				label_ownerNo.setText("Total Number of Pet Owner : " + Integer.toString(model.getOwnerNumbers()));
+			}
+			
+			if (model.getAppNumbers(false) != null) {
+				label_appointmentNo.setText("Upcoming Appointments : " + Integer.toString(model.getAppNumbers(false)));
+			}
+			
+			if (model.getAppNumbers(true) != null) {
+				label_completeAppNo.setText("Complete Appointments : " + Integer.toString(model.getAppNumbers(true)));
+			}
+			
+			
 		}
 		 
 	
@@ -416,7 +434,7 @@ public class MainInterfaceController implements Initializable {
 			if (owners.isEmpty()) {
 				Alert alert = new Alert(AlertType.ERROR);
 				alert.setTitle("Program says");
-				alert.setHeaderText("Owner not found");
+				alert.setHeaderText("Owner not found in Search");
 				alert.show();
 				textField_ownerIcNumber.clear();
 				return;
@@ -436,6 +454,11 @@ public class MainInterfaceController implements Initializable {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	@FXML
+	public void onEnterSearch(ActionEvent event){
+	  searchOwner(event);
 	}
 	
 	// Edit Owner info based on IC Number -> Owner ID
@@ -511,6 +534,7 @@ public class MainInterfaceController implements Initializable {
 		textField_ownerAddress.clear();
 		textField_ownerPhoneNumber.clear();
 		textField_ownerEmail.clear();
+		petTable.setItems(null);
 		
 	}
 	
@@ -1943,7 +1967,7 @@ public class MainInterfaceController implements Initializable {
          Optional<ButtonType> result = alertConfirm.showAndWait();
          if (result.get() == ButtonType.OK){
         	 int count = model.deleteAll();
-     		if (count > 1) {
+     		if (count >= 1) {
      			Alert alert = new Alert(AlertType.INFORMATION);
      			alert.setTitle("Program says");
      			alert.setHeaderText("Database Reset Successful.");

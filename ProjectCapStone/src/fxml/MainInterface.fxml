@@ -242,7 +242,7 @@
                                           <HBox prefHeight="100.0" prefWidth="200.0">
                                              <children>
                                                 <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="100.0" text="IC No :" textFill="#707c80" />
-                                                <TextField fx:id="textField_ownerIcNumber" promptText="Identification Number">
+                                                <TextField fx:id="textField_ownerIcNumber" onAction="#onEnterSearch" promptText="Press Enter to Search">
                                                    <HBox.margin>
                                                       <Insets />
                                                    </HBox.margin>
@@ -575,11 +575,16 @@
                <content>
                   <AnchorPane prefWidth="800.0">
                      <children>
-                        <Button layoutX="43.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeDatabaseTab" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
-                           <graphic>
-                              <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
-                           </graphic>
-                        </Button>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#closeDatabaseTab">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
+                                 </graphic>
+                              </Button>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
                         <JFXRadioButton fx:id="rb_catVaccine" layoutX="24.0" layoutY="83.0" onAction="#selectType" text="Cat Vaccine">
                            <toggleGroup>
                               <ToggleGroup fx:id="vac_petType" />
@@ -593,7 +598,10 @@
                         <JFXButton layoutX="473.0" layoutY="140.0" onAction="#clearDatabaseTextField" text="Clear" />
                         <JFXRadioButton fx:id="rb_catBreed" layoutX="332.0" layoutY="84.0" onAction="#selectType" text="Cat Breed" toggleGroup="$vac_petType" />
                         <JFXRadioButton fx:id="rb_dogBreed" layoutX="454.0" layoutY="84.0" onAction="#selectType" text="Dog Breed" toggleGroup="$vac_petType" />
-                        <Label layoutX="38.0" layoutY="46.0" text="Manage Database" />
+                        <Label layoutX="38.0" layoutY="46.0" text="Manage Database" textFill="#707c80">
+                           <font>
+                              <Font name="SansSerif Bold" size="24.0" />
+                           </font></Label>
                         <JFXButton fx:id="button_viewAllOwners" layoutX="31.0" layoutY="326.0" onAction="#viewOwnerTable" text="View All Pet Owners" />
                         <JFXButton fx:id="button_viewAllPets" layoutX="201.0" layoutY="326.0" onAction="#viewPetTable" text="View All Pets" />
                         <TableView fx:id="tb_database" layoutX="71.0" layoutY="353.0" prefHeight="200.0" prefWidth="558.0" />
@@ -614,8 +622,11 @@
                               <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
                            </graphic>
                         </Button>
-                        <PieChart fx:id="pieChart" layoutX="131.0" layoutY="72.0" title="Types of Vaccines" titleSide="BOTTOM" />
-                        <Label fx:id="label_pieChartNumber" layoutX="366.0" layoutY="505.0" />
+                        <PieChart fx:id="pieChart" layoutX="213.0" layoutY="131.0" prefHeight="336.0" prefWidth="375.0" title="Types of Vaccines" titleSide="BOTTOM" />
+                        <Label fx:id="label_pieChartNumber" layoutX="350.0" layoutY="483.0" />
+                        <Label fx:id="label_ownerNo" layoutX="38.0" layoutY="49.0" text="Total Number of Pet Owner :" />
+                        <Label fx:id="label_appointmentNo" layoutX="243.0" layoutY="49.0" text="Upcoming Appointments :" />
+                        <Label fx:id="label_completeAppNo" layoutX="471.0" layoutY="58.0" text="Completed Appointments :" />
                      </children>
                   </AnchorPane>
                </content>

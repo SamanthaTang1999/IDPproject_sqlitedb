@@ -189,6 +189,15 @@ public class AddEditPetController implements Initializable {
 		String neutered = "";
 		
 		try {
+			
+			if (comboBox_breed.getSelectionModel().isEmpty()) {
+				Alert alert = new Alert(AlertType.ERROR);
+				alert.setTitle("Program says");
+				alert.setHeaderText("Pet info is incomplete.");
+				alert.show();
+				return;
+			}
+			
 				
 			
 				if (radioButton_dog.isSelected()) {
@@ -250,6 +259,7 @@ public class AddEditPetController implements Initializable {
 				if (model.addPetInfo(ownerID, petName, petType, breed, gender, dob, neutered)) {
 					
 					((Node)event.getSource()).getScene().getWindow().hide();
+				
 					
 					
 					log.logFile(null, "info", petName + " the " + petType + " is registered into database.");
@@ -275,6 +285,7 @@ public class AddEditPetController implements Initializable {
 					if (model.editPetInfo(petID, petName, petType, breed, gender, dob, neutered)) {
 					
 					((Node)event.getSource()).getScene().getWindow().hide();
+					
 					
 					
 					log.logFile(null, "info", petName + " with PetID : " + petID + " is edited in database.");

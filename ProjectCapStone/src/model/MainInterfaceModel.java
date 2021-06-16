@@ -1134,4 +1134,83 @@ public Integer deleteAll() throws SQLException {
 	}
 }
 
+public Integer getOwnerNumbers() throws SQLException {
+	PreparedStatement preparedStatement = null;
+	ResultSet resultSet = null;
+	String query = "SELECT COUNT(*) FROM owners ";
+	Integer count = null;
+	
+	try {
+		preparedStatement = connection.prepareStatement(query);
+		
+		resultSet = preparedStatement.executeQuery();
+		
+		while (resultSet.next()) {
+			
+			count = resultSet.getInt("COUNT(*)");
+			
+			
+		}
+		
+		return count;
+		
+	
+} catch (Exception e) {
+	log.logFile(e, "severe", e.getMessage());
+	e.printStackTrace();
+	return null;
+}
+
+finally {
+	preparedStatement.close();
+	resultSet.close();
+}
+	
+	
+}
+public Integer getAppNumbers(Boolean isComplete) throws SQLException {
+	PreparedStatement preparedStatement = null;
+	ResultSet resultSet = null;
+	String query = "SELECT COUNT(*) FROM upcoming_appointments WHERE Status = ? ";
+	Integer count = null;
+	String status = "";
+	
+	if (isComplete) {
+		status = "Completed";
+	}
+	
+	else {
+		status = "Confirmed";
+	}
+	
+	try {
+		preparedStatement = connection.prepareStatement(query);
+		preparedStatement.setString(1, status);
+		
+		resultSet = preparedStatement.executeQuery();
+		
+		while (resultSet.next()) {
+			
+			count = resultSet.getInt("COUNT(*)");
+			
+		}
+		
+		return count;
+		
+	
+} catch (Exception e) {
+	log.logFile(e, "severe", e.getMessage());
+	e.printStackTrace();
+	return null;
+}
+
+finally {
+	preparedStatement.close();
+	resultSet.close();
+}
+	
+	
+}
+
+
 }
