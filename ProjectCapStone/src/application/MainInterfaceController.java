@@ -1933,35 +1933,46 @@ public class MainInterfaceController implements Initializable {
 	}
 
 	
-	public void viewOwnerTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
+	public Integer viewOwnerTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
 		tb_database.getItems().clear();
 		tb_database.getColumns().clear();
 		 ResultSet rs = model.getTable(true);
 		 getTable(rs);
+		 int count = tb_database.getItems().size();
+		 return count;
+				 
+		 
 		
 	}
 	
 	
-	public void viewPetTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
+	public Integer viewPetTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
 		tb_database.getItems().clear();
 		tb_database.getColumns().clear();
 		 ResultSet rs = model.getTable(false);
 		 getTable(rs);
+		 int count = tb_database.getItems().size();
+		 return count;
+		
 		
 	}
 	
-	public void viewVacTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
+	public Integer viewVacTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
 		tb_database.getItems().clear();
 		tb_database.getColumns().clear();
 		 ResultSet rs = model.getRecord(true);
 		 getTable(rs);
+		 int count = tb_database.getItems().size();
+		 return count;
 	}
 	
-	public void viewMedTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
+	public Integer viewMedTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
 		tb_database.getItems().clear();
 		tb_database.getColumns().clear();
 		 ResultSet rs = model.getRecord(false);
 		 getTable(rs);
+		 int count = tb_database.getItems().size();
+		 return count;
 		
 	}
 	
@@ -1970,7 +1981,8 @@ public class MainInterfaceController implements Initializable {
 		tf_newEntry.clear();
 	}
 	
-	public void resetDatabase(ActionEvent event) throws SQLException {
+	public void resetDatabase(ActionEvent event) throws SQLException, NoSuchMethodException, SecurityException {
+
 		 Alert alertConfirm = new Alert(AlertType.CONFIRMATION);
 		 alertConfirm.setTitle("Program says");
 		 alertConfirm.setHeaderText("Are you sure you want to reset database?");
@@ -1979,7 +1991,39 @@ public class MainInterfaceController implements Initializable {
 
          Optional<ButtonType> result = alertConfirm.showAndWait();
          if (result.get() == ButtonType.OK){
-        	 int count = model.deleteAll();
+        	 model.deleteAll();
+        	
+        
+        	 if (viewOwnerTable(event) == 0 && viewMedTable(event) == 0 && viewPetTable(event) == 0 && viewVacTable(event) == 0) {
+        		 Alert alert = new Alert(AlertType.INFORMATION);
+      			alert.setTitle("Program says");
+      			alert.setHeaderText("Database Reset Successful.");
+      			alert.show();
+      			log.logFile(null, "info", "Database Reset Successful.");
+      			tb_database.getItems().clear();
+      			tb_database.getColumns().clear();
+      			
+			}
+        	 
+        	 else {
+        		 log.logFile(null, "warning", "Database Reset Not Successful.");
+			}
+        	 
+        	 viewAllUsers(event);
+             
+        	 if (tb_database.getItems().size() == 0) {
+      			
+			}
+        	 
+        	 else {
+        		 log.logFile(null, "warning", "Database Reset Not Successful.");
+			}
+        	 
+        	 viewAllUsers(event);
+           
+        	 //int count = model.deleteAll();
+        	 //System.out.println(count);
+        	 /*
      		if (count >= 1) {
      			Alert alert = new Alert(AlertType.INFORMATION);
      			alert.setTitle("Program says");
@@ -1988,8 +2032,10 @@ public class MainInterfaceController implements Initializable {
      			log.logFile(null, "info", "Database Reset Successful.");
      		}
      		else {
-     			log.logFile(null, "warning", "Database Reset Not Successful.");
+     			
      		}
+     		*/
+        	 
          }
 		
 	}

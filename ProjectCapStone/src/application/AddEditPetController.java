@@ -190,15 +190,8 @@ public class AddEditPetController implements Initializable {
 		
 		try {
 			
-			if (comboBox_breed.getSelectionModel().isEmpty()) {
-				Alert alert = new Alert(AlertType.ERROR);
-				alert.setTitle("Program says");
-				alert.setHeaderText("Pet info is incomplete.");
-				alert.show();
-				return;
-			}
 			
-				
+	
 			
 				if (radioButton_dog.isSelected()) {
 					petType = radioButton_dog.getText();
@@ -234,6 +227,14 @@ public class AddEditPetController implements Initializable {
 				LocalDate lDate = datePicker_dob.getValue();
 				
 				if (lDate == null) {
+					Alert alert = new Alert(AlertType.ERROR);
+					alert.setTitle("Program says");
+					alert.setHeaderText("Pet info is incomplete.");
+					alert.show();
+					return;
+				}
+				
+				if (comboBox_breed.getSelectionModel().isEmpty() && (radioButton_cat.isSelected() || radioButton_dog.isSelected())) {
 					Alert alert = new Alert(AlertType.ERROR);
 					alert.setTitle("Program says");
 					alert.setHeaderText("Pet info is incomplete.");

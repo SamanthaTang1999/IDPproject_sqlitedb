@@ -1096,9 +1096,8 @@ public ResultSet getPieChartData() {
 	
 }
 	
-public Integer deleteAll() throws SQLException {
+public void deleteAll() throws SQLException {
 	PreparedStatement preparedStatement = null;
-	int count = 0;
 	String [] queries = {
 						 "DROP TABLE IF EXISTS owners;","CREATE TABLE IF NOT EXISTS owners(OwnerID INTEGER PRIMARY KEY AUTOINCREMENT, FirstName varchar(32) NOT NULL, LastName varchar(32) NOT NULL, IcNumber varchar(12) UNIQUE NOT NULL, PhoneNumber varchar(50) NOT NULL, Address varchar(100) NOT NULL, Email varchar(45) NOT NULL)",
 						 "DROP TABLE IF EXISTS pets;","CREATE TABLE IF NOT EXISTS pets(PetID INTEGER PRIMARY KEY AUTOINCREMENT, OwnerID INTEGER NOT NULL, PetName varchar(32) NOT NULL, PetType varchar(32) NOT NULL, Breed varchar(32) NOT NULL, Gender varchar(32) NOT NULL, DOB varchar(50) NOT NULL, Neutered varchar(32) NOT NULL)",
@@ -1111,21 +1110,14 @@ public Integer deleteAll() throws SQLException {
 		for(String query:queries)
 		{
 			preparedStatement = connection.prepareStatement(query);
-			
-			
-			if (preparedStatement.executeUpdate() != 0) {
-				count++;
-			}
-		
+			preparedStatement.execute();
 		}
 			
-	return count;
+	
 		
 	} catch (Exception e) {
 		log.logFile(e, "severe", e.getMessage());
 		e.printStackTrace();
-		return null;
-		
 	}
 	
 	finally {
