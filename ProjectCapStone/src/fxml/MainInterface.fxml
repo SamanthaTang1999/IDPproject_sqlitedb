@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
-<?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTabPane?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
@@ -16,7 +15,6 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -36,12 +34,12 @@
                               <HBox prefHeight="220.0" prefWidth="800.0" spacing="80.0">
                                  <children>
                                  
-                                    <Button mnemonicParsing="false" onAction="#petOwner" prefHeight="150.0" prefWidth="150.0">
+                                    <Button mnemonicParsing="false" onAction="#petOwner" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20;">
                                        <HBox.margin>
                                           <Insets left="80.0" top="30.0" />
                                        </HBox.margin>
                                        <graphic>
-                                          <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="140.0">
+                                          <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="140.0" style="-fx-background-radius: 20;">
                                              <children>
                                                 <FontAwesomeIconView fill="WHITE" glyphName="USER" size="70">
                                                    <VBox.margin>
@@ -57,7 +55,7 @@
                                        </graphic>
                                     </Button>
                                     
-                                          <Button mnemonicParsing="false" onAction="#goToCalender" prefHeight="150.0" prefWidth="150.0">
+                                          <Button mnemonicParsing="false" onAction="#goToCalender" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20;">
                                        <HBox.margin>
                                           <Insets top="30.0" />
                                        </HBox.margin>
@@ -78,11 +76,11 @@
                                           </VBox>
                                        </graphic>
                                     </Button>
-                                    <Button mnemonicParsing="false" onAction="#goToUser" prefHeight="150.0" prefWidth="150.0">
+                                    <Button mnemonicParsing="false" onAction="#goToUser" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20;">
                                        <graphic>
                                           <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="140.0">
                                              <children>
-                                                <FontAwesomeIconView fill="WHITE" glyphName="GEARS" size="70">
+                                                <FontAwesomeIconView fill="WHITE" glyphName="ADDRESS_BOOK" size="70">
                                                    <VBox.margin>
                                                       <Insets bottom="22.5" top="20.0" />
                                                    </VBox.margin>
@@ -106,14 +104,14 @@
                               </HBox>
                               <HBox prefHeight="220.0" prefWidth="800.0" spacing="80.0">
                                  <children>
-                                    <Button mnemonicParsing="false" onAction="#goToSettings" prefHeight="150.0" prefWidth="150.0">
+                                    <Button mnemonicParsing="false" onAction="#goToSettings" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20;">
                                        <HBox.margin>
                                           <Insets left="80.0" top="30.0" />
                                        </HBox.margin>
                                        <graphic>
                                           <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="140.0">
                                              <children>
-                                                <FontAwesomeIconView fill="WHITE" glyphName="GEARS" size="70">
+                                                <FontAwesomeIconView fill="WHITE" glyphName="DATABASE" size="70">
                                                    <VBox.margin>
                                                       <Insets bottom="22.5" top="20.0" />
                                                    </VBox.margin>
@@ -127,14 +125,14 @@
                                           </VBox>
                                        </graphic>
                                     </Button>
-                                    <Button mnemonicParsing="false" onAction="#goToStatistics" prefHeight="150.0" prefWidth="150.0">
+                                    <Button mnemonicParsing="false" onAction="#goToStatistics" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20;">
                                        <HBox.margin>
                                           <Insets top="30.0" />
                                        </HBox.margin>
                                        <graphic>
                                           <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="140.0">
                                              <children>
-                                                <FontAwesomeIconView fill="WHITE" glyphName="GEARS" size="70">
+                                                <FontAwesomeIconView fill="WHITE" glyphName="LINE_CHART" size="70">
                                                    <VBox.margin>
                                                       <Insets bottom="22.5" top="20.0" />
                                                    </VBox.margin>
@@ -148,7 +146,7 @@
                                           </VBox>
                                        </graphic>
                                     </Button>
-                                    <Button mnemonicParsing="false" onAction="#logout" prefHeight="150.0" prefWidth="150.0">
+                                    <Button mnemonicParsing="false" onAction="#logout" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 20;">
                                        <HBox.margin>
                                           <Insets top="30.0" />
                                        </HBox.margin>
@@ -194,12 +192,12 @@
                         </Button>
                         <HBox prefHeight="30.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#searchOwner" prefHeight="20.0" prefWidth="100.0" text="Search">
+                              <Button mnemonicParsing="false" onAction="#searchOwner" prefHeight="20.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="SEARCH">
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>
                               </Button>
-                              <Button mnemonicParsing="false" onAction="#saveOwnerInfo" prefHeight="20.0" text="Add New Owner">
+                              <Button mnemonicParsing="false" onAction="#saveOwnerInfo" prefHeight="20.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="ADD OWNER">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
@@ -301,17 +299,17 @@
                               </HBox>
                               <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="115.0">
                                  <children>
-                                    <Button mnemonicParsing="false" onAction="#clearInfo" prefHeight="20.0" prefWidth="100.0" text="Clear">
+                                    <Button mnemonicParsing="false" onAction="#clearInfo" prefHeight="20.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="CLEAR">
                                        <HBox.margin>
                                           <Insets />
                                        </HBox.margin>
                                     </Button>
-                                    <Button mnemonicParsing="false" onAction="#editOwnerInfo" prefHeight="20.0" text="Edit Owner Info">
+                                    <Button mnemonicParsing="false" onAction="#editOwnerInfo" prefHeight="20.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="EDIT INFO">
                                        <HBox.margin>
                                           <Insets left="10.0" />
                                        </HBox.margin>
                                     </Button>
-                                    <Button mnemonicParsing="false" onAction="#deleteOwner" prefHeight="20.0" prefWidth="100.0" text="Delete Owner">
+                                    <Button mnemonicParsing="false" onAction="#deleteOwner" prefHeight="20.0" style="-fx-background-radius: 15;" text="DELETE OWNER">
                                        <HBox.margin>
                                           <Insets left="10.0" />
                                        </HBox.margin>
@@ -348,12 +346,12 @@
                         </AnchorPane>
                         <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
                            <children>
-                              <Button lineSpacing="20.0" mnemonicParsing="false" onAction="#refreshPetTable" prefHeight="20.0" prefWidth="100.0" text="Refresh">
+                              <Button lineSpacing="20.0" mnemonicParsing="false" onAction="#refreshPetTable" prefHeight="20.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="REFRESH">
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>
                               </Button>
-                              <Button mnemonicParsing="false" onAction="#addPet" prefHeight="20.0" prefWidth="100.0" text="Add Pet">
+                              <Button mnemonicParsing="false" onAction="#addPet" prefHeight="20.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="ADD PET">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
@@ -373,8 +371,8 @@
                            </graphic></Button>
                         <HBox prefHeight="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#editPetInfo" prefHeight="20.0" prefWidth="100.0" text="Edit Info" />
-                              <Button mnemonicParsing="false" onAction="#deletePetInfo" prefHeight="20.0" prefWidth="100.0" text="Delete Info">
+                              <Button mnemonicParsing="false" onAction="#editPetInfo" prefHeight="20.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="EDIT INFO" />
+                              <Button mnemonicParsing="false" onAction="#deletePetInfo" prefHeight="20.0" prefWidth="110.0" style="-fx-background-radius: 15; -fx-background-color: RED;" text="DELETE INFO" textFill="WHITE">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
@@ -447,8 +445,8 @@
                                                       </TableView>
                                                       <HBox prefHeight="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="300.0">
                                                          <children>
-                                                            <Button mnemonicParsing="false" onAction="#refreshVacRecordTable" text="Refresh" />
-                                                            <Button mnemonicParsing="false" onAction="#addVaccinationRecord" text="Add Vaccination record">
+                                                            <Button mnemonicParsing="false" onAction="#refreshVacRecordTable" prefWidth="110.0" style="-fx-background-radius: 15;" text="REFRESH" />
+                                                            <Button mnemonicParsing="false" onAction="#addVaccinationRecord" style="-fx-background-radius: 15;" text="ADD VACCINATION RECORD">
                                                                <HBox.margin>
                                                                   <Insets left="10.0" />
                                                                </HBox.margin></Button>
@@ -474,8 +472,8 @@
                                                       </TableView>
                                                       <HBox prefHeight="30.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="300.0">
                                                          <children>
-                                                            <Button mnemonicParsing="false" onAction="#refreshMedRecordTable" text="Refresh" />
-                                                            <Button mnemonicParsing="false" onAction="#addMedicationRecord" text="Add Medication Record">
+                                                            <Button mnemonicParsing="false" onAction="#refreshMedRecordTable" prefWidth="110.0" style="-fx-background-radius: 15;" text="REFRESH" />
+                                                            <Button maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addMedicationRecord" prefWidth="200.0" style="-fx-background-radius: 15;" text="ADD MEDICATION RECORD">
                                                                <HBox.margin>
                                                                   <Insets left="10.0" />
                                                                </HBox.margin>
@@ -502,7 +500,7 @@
                <content>
                   <AnchorPane prefWidth="800.0">
                      <children>
-                        <Button layoutX="43.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeCalenderTab" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                        <Button layoutX="43.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeCalenderTab" style="-fx-background-radius: 50;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
                            </graphic></Button>
@@ -528,7 +526,7 @@
                                           <Insets />
                                        </VBox.margin>
                                     </ListView>
-                                    <Button mnemonicParsing="false" onAction="#refreshAppointmentList" prefWidth="100.0" text="Refresh">
+                                    <Button mnemonicParsing="false" onAction="#refreshAppointmentList" prefWidth="115.0" style="-fx-background-radius: 15;" text="REFRESH">
                                        <VBox.margin>
                                           <Insets top="5.0" />
                                        </VBox.margin>
@@ -548,25 +546,130 @@
                <content>
                   <AnchorPane prefWidth="800.0">
                      <children>
-                        <Button layoutX="43.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeUserTab" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
-                           <graphic>
-                              <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
-                           </graphic>
-                        </Button>
-                        <Label fx:id="label_userName" layoutX="58.0" layoutY="63.0" text="Label" />
-                        <JFXButton layoutX="63.0" layoutY="172.0" onAction="#editPassword" text="Edit Password" />
-                        <Separator layoutY="213.0" prefWidth="200.0" AnchorPane.bottomAnchor="339.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="210.0" />
-                        <Label layoutX="31.0" layoutY="227.0" text="Register New User" />
-                        <JFXTextField fx:id="tf_newUser" layoutX="38.0" layoutY="276.0" promptText="User Name" />
-                        <JFXPasswordField fx:id="pf_newPF" layoutX="38.0" layoutY="326.0" promptText="New Password" />
-                        <JFXPasswordField fx:id="pf_confirmPF" layoutX="38.0" layoutY="388.0" promptText="Confirm Password" />
-                        <JFXButton layoutX="41.0" layoutY="463.0" onAction="#registerNewUser" text="Register" />
-                        <JFXButton layoutX="170.0" layoutY="463.0" onAction="#clearUserTextField" text="Clear " />
-                        <JFXPasswordField fx:id="pf_oldPF" layoutX="61.0" layoutY="96.0" promptText="Old Password" />
-                        <JFXPasswordField fx:id="pf_editPF" layoutX="61.0" layoutY="137.0" promptText="New Password" />
-                        <JFXButton layoutX="233.0" layoutY="164.0" onAction="#deleteUser" text="Delete Current User" />
-                        <ListView fx:id="listView_users" layoutX="424.0" layoutY="33.0" prefHeight="181.0" prefWidth="144.0" />
-                        <Label layoutX="433.0" layoutY="15.0" text="User List" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <HBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="800.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#closeUserTab" style="-fx-background-radius: 50;">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to right top, #00458b, #006aa9, #008ebc, #00b0c4, #3fd2c7); -fx-background-radius: 30;">
+                                       <children>
+                                          <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0">
+                                             <children>
+                                                <Label fx:id="label_userName" text="Label" textFill="#efeee8">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="24.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="50.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Separator maxWidth="-Infinity" minWidth="-Infinity" prefWidth="60.0">
+                                                   <VBox.margin>
+                                                      <Insets left="50.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </Separator>
+                                                <Label text="Reset Password" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="SansSerif Bold" size="16.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="50.0" top="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <ListView fx:id="listView_users" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="125.0" prefWidth="144.0">
+                                                   <VBox.margin>
+                                                      <Insets left="50.0" right="50.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </ListView>
+                                                <JFXPasswordField fx:id="pf_oldPF" focusColor="#3fd2c7" labelFloat="true" promptText="Current Password" unFocusColor="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets left="50.0" right="50.0" top="15.0" />
+                                                   </VBox.margin>
+                                                </JFXPasswordField>
+                                                <JFXPasswordField fx:id="pf_editPF" focusColor="#3fd2c7" labelFloat="true" promptText="New Password" unFocusColor="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets left="50.0" right="50.0" top="20.0" />
+                                                   </VBox.margin>
+                                                </JFXPasswordField>
+                                                <JFXButton alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" minWidth="-Infinity" onAction="#editPassword" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #3fd2c7; -fx-background-radius: 50;" text="UPDATE PASSWORD" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets left="50.0" top="30.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton alignment="CENTER" onAction="#deleteUser" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #3fd2c7; -fx-background-radius: 50;" text="DELETE USER" textFill="WHITE">
+                                                   <VBox.margin>
+                                                      <Insets left="50.0" top="10.0" />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="System Bold" size="13.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0">
+                                       <children>
+                                          <Label text="Creat Account" textFill="#008ebc">
+                                             <font>
+                                                <Font name="SansSerif Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXTextField fx:id="tf_newUser" focusColor="#3fd2c7" labelFloat="true" promptText="User Name" unFocusColor="#707c80">
+                                             <VBox.margin>
+                                                <Insets left="30.0" right="50.0" top="50.0" />
+                                             </VBox.margin>
+                                          </JFXTextField>
+                                          <JFXPasswordField fx:id="pf_newPF" focusColor="#3fd2c7" labelFloat="true" promptText="New Password" unFocusColor="#707c80">
+                                             <VBox.margin>
+                                                <Insets left="30.0" right="50.0" top="20.0" />
+                                             </VBox.margin>
+                                          </JFXPasswordField>
+                                          <JFXPasswordField fx:id="pf_confirmPF" focusColor="#3fd2c7" labelFloat="true" promptText="Confirm Password" unFocusColor="#707c80">
+                                             <VBox.margin>
+                                                <Insets left="30.0" right="50.0" top="20.0" />
+                                             </VBox.margin>
+                                          </JFXPasswordField>
+                                          <JFXButton onAction="#registerNewUser" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #008ebc; -fx-background-radius: 50;" text="REGISTER" textFill="WHITE">
+                                             <VBox.margin>
+                                                <Insets top="50.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
                      </children>
                   </AnchorPane>
                </content>
@@ -575,40 +678,124 @@
                <content>
                   <AnchorPane prefWidth="800.0">
                      <children>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
+                        <VBox prefHeight="550.0" prefWidth="780.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#closeDatabaseTab">
-                                 <graphic>
-                                    <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
-                                 </graphic>
-                              </Button>
-                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                              <HBox prefHeight="25.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#closeDatabaseTab" style="-fx-background-radius: 50;">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Button>
+                                    <JFXButton maxWidth="-Infinity" minWidth="-Infinity" onAction="#resetDatabase" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="RESET DATABASE" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="600.0" right="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                              <Label text="Manage Database" textFill="#707c80">
+                                 <font>
+                                    <Font name="SansSerif Regular" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="label_listName" prefHeight="20.0" prefWidth="230.0" textFill="#707c80">
+                                 <VBox.margin>
+                                    <Insets left="230.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="SansSerif Regular" size="13.0" />
+                                 </font>
+                              </Label>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="500.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #008ebc;">
+                                       <children>
+                                          <HBox prefHeight="200.0" prefWidth="500.0">
+                                             <children>
+                                                <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="210.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onAction="#generateCatVaccineList" prefHeight="50.0" prefWidth="210.0" style="-fx-background-radius: 25 0 0 25;" text="Cat Vaccine">
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                      <Button mnemonicParsing="false" onAction="#generateDogVaccineList" prefHeight="50.0" prefWidth="210.0" style="-fx-background-radius: 25 0 0 25;" text="Dog Vaccine" />
+                                                      <Button mnemonicParsing="false" onAction="#generateCatBreedList" prefHeight="50.0" prefWidth="210.0" style="-fx-background-radius: 25 0 0 25;" text="Cat Breed" />
+                                                      <Button mnemonicParsing="false" onAction="#generateDogBreedList" prefHeight="50.0" prefWidth="210.0" style="-fx-background-radius: 25 0 0 25;" text="Dog Breed" />
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <ListView fx:id="listView_database" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="280.0">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </ListView>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </AnchorPane>
+                                    <VBox prefHeight="200.0" prefWidth="270.0" style="-fx-background-color: #008ebc;">
+                                       <children>
+                                          <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="270.0">
+                                             <children>
+                                                <JFXTextField fx:id="tf_newEntry" focusColor="#3fd2c7" labelFloat="true" prefWidth="190.0" promptText="New Entry" unFocusColor="#707c80">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" top="20.0" />
+                                                   </HBox.margin>
+                                                </JFXTextField>
+                                                <JFXButton onAction="#addNewEntry" prefHeight="20.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="Add">
+                                                   <HBox.margin>
+                                                      <Insets top="20.0" />
+                                                   </HBox.margin></JFXButton>
+                                             </children>
+                                          </HBox>
+                                          <JFXButton onAction="#deleteItem" prefHeight="20.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="Delete">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin></JFXButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="760.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <JFXButton fx:id="button_viewAllOwners" onAction="#viewOwnerTable" prefHeight="40.0" prefWidth="200.0" text="View All Pet Owners" />
+                                    <JFXButton onAction="#viewVacTable" prefHeight="40.0" prefWidth="210.0" text="View All Vaccination Records">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin></JFXButton>
+                                    <JFXButton onAction="#viewMedTable" prefHeight="40.0" prefWidth="210.0" text="View All Medication Records" />
+                                    <JFXButton fx:id="button_viewAllPets" onAction="#viewPetTable" prefHeight="40.0" prefWidth="160.0" text="View All Pets" />
+                                 </children>
+                              </HBox>
+                              <TableView fx:id="tb_database" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="760.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </TableView>
                            </children>
                         </VBox>
-                        <JFXRadioButton fx:id="rb_catVaccine" layoutX="24.0" layoutY="83.0" onAction="#selectType" text="Cat Vaccine">
-                           <toggleGroup>
-                              <ToggleGroup fx:id="vac_petType" />
-                           </toggleGroup>
-                        </JFXRadioButton>
-                        <JFXRadioButton fx:id="rb_dogVaccine" layoutX="150.0" layoutY="83.0" onAction="#selectType" text="Dog Vaccine" toggleGroup="$vac_petType" />
-                        <ListView fx:id="listView_database" layoutX="19.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" />
-                        <JFXButton layoutX="400.0" layoutY="140.0" onAction="#addNewEntry" text="Add" />
-                        <JFXButton layoutX="247.0" layoutY="167.0" onAction="#deleteItem" text="Delete" />
-                        <JFXTextField fx:id="tf_newEntry" layoutX="228.0" layoutY="126.0" promptText="New Entry" />
-                        <JFXButton layoutX="473.0" layoutY="140.0" onAction="#clearDatabaseTextField" text="Clear" />
-                        <JFXRadioButton fx:id="rb_catBreed" layoutX="332.0" layoutY="84.0" onAction="#selectType" text="Cat Breed" toggleGroup="$vac_petType" />
-                        <JFXRadioButton fx:id="rb_dogBreed" layoutX="454.0" layoutY="84.0" onAction="#selectType" text="Dog Breed" toggleGroup="$vac_petType" />
-                        <Label layoutX="38.0" layoutY="46.0" text="Manage Database" textFill="#707c80">
-                           <font>
-                              <Font name="SansSerif Bold" size="24.0" />
-                           </font></Label>
-                        <JFXButton fx:id="button_viewAllOwners" layoutX="31.0" layoutY="326.0" onAction="#viewOwnerTable" text="View All Pet Owners" />
-                        <JFXButton fx:id="button_viewAllPets" layoutX="201.0" layoutY="326.0" onAction="#viewPetTable" text="View All Pets" />
-                        <TableView fx:id="tb_database" layoutX="71.0" layoutY="353.0" prefHeight="200.0" prefWidth="558.0" />
-                        <Label fx:id="label_listName" layoutX="23.0" layoutY="109.0" />
-                        <JFXButton layoutX="602.0" layoutY="14.0" onAction="#resetDatabase" text="Reset Database" textFill="#d31b15" />
-                        <JFXButton layoutX="285.0" layoutY="300.0" onAction="#viewVacTable" text="View All Vaccination Records" />
-                        <JFXButton layoutX="485.0" layoutY="313.0" onAction="#viewMedTable" text="View All Medication Records" />
                      </children>
                   </AnchorPane>
                </content>
@@ -617,16 +804,145 @@
                <content>
                   <AnchorPane prefWidth="800.0">
                      <children>
-                        <Button layoutX="43.0" layoutY="26.0" mnemonicParsing="false" onAction="#closeStatisticsTab" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
-                           <graphic>
-                              <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
-                           </graphic>
-                        </Button>
-                        <PieChart fx:id="pieChart" layoutX="213.0" layoutY="131.0" prefHeight="336.0" prefWidth="375.0" title="Types of Vaccines" titleSide="BOTTOM" />
-                        <Label fx:id="label_pieChartNumber" layoutX="350.0" layoutY="483.0" />
-                        <Label fx:id="label_ownerNo" layoutX="38.0" layoutY="49.0" text="Total Number of Pet Owner :" />
-                        <Label fx:id="label_appointmentNo" layoutX="243.0" layoutY="49.0" text="Upcoming Appointments :" />
-                        <Label fx:id="label_completeAppNo" layoutX="471.0" layoutY="58.0" text="Completed Appointments :" />
+                        <VBox prefHeight="550.0" prefWidth="800.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#closeStatisticsTab" style="-fx-background-radius: 50;">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" size="12.5" />
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #008ebc; -fx-background-radius: 15;">
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <HBox prefHeight="100.0" prefWidth="230.0">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="50">
+                                                   <HBox.margin>
+                                                      <Insets bottom="22.0" left="10.0" top="22.0" />
+                                                   </HBox.margin>
+                                                </FontAwesomeIconView>
+                                                <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="170.0">
+                                                   <children>
+                                                      <Label text="Total Pet Owner :" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets right="10.0" top="20.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="SansSerif Regular" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="label_ownerNo" text="1" textAlignment="RIGHT" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="SansSerif Bold" size="36.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets right="20.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #00b0c4; -fx-background-radius: 15;">
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <HBox prefHeight="100.0" prefWidth="230.0">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR_ALT" size="50">
+                                                   <HBox.margin>
+                                                      <Insets bottom="22.0" left="10.0" top="22.0" />
+                                                   </HBox.margin>
+                                                </FontAwesomeIconView>
+                                                <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="170.0">
+                                                   <children>
+                                                      <Label text="Appointments :" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets left="10.0" right="10.0" top="20.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                      <Label fx:id="label_appointmentNo" text="1" textAlignment="RIGHT" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="SansSerif Bold" size="36.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets right="10.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="220.0" style="-fx-background-color: #008ebc; -fx-background-radius: 15;">
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <HBox prefHeight="100.0" prefWidth="230.0">
+                                             <children>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR_CHECK_ALT" size="50">
+                                                   <HBox.margin>
+                                                      <Insets bottom="22.0" left="10.0" top="22.0" />
+                                                   </HBox.margin>
+                                                </FontAwesomeIconView>
+                                                <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="170.0">
+                                                   <children>
+                                                      <Label text="Completed Appointments :" textFill="WHITE">
+                                                         <VBox.margin>
+                                                            <Insets right="10.0" top="20.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="SansSerif Regular" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="label_completeAppNo" text="1" textAlignment="RIGHT" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="SansSerif Bold" size="36.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets right="10.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <PieChart fx:id="pieChart" prefHeight="336.0" prefWidth="375.0" title="Types of Vaccines" titleSide="BOTTOM" />
+                              <Label fx:id="label_pieChartNumber" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="805.0" text="Show pie chart details">
+                                 <font>
+                                    <Font name="SansSerif Regular" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="1.0" right="1.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </VBox>
                      </children>
                   </AnchorPane>
                </content>

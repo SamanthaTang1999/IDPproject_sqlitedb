@@ -15,9 +15,8 @@ public class LoginModel {
 		connection = SqliteConnection.Connector();
 		if (connection == null) {
 			log.logFile(null, "severe", "VetNavigate unable to connect to SQL");
-			//System.exit(1);
-			
 		}
+		
 	}
 	
 	public boolean isDbConnected() {
@@ -29,6 +28,34 @@ public class LoginModel {
 			return false;
 		}
 		
+	}
+	// need to create other tables like users, vaccine_cat/dog, breed_cats/dog, and etc
+	// need to add default user "admin, 1"
+	// need to add credential email and password
+	// need to populate vaccine and breed tables
+	// add more items if needed, things that I may miss
+	
+	public void populateTables() {
+		System.out.println("Populate table");
+		String[] sqls = {};		//
+		try {
+			
+			for (String sql : sqls)
+			{
+				Statement statement = connection.createStatement();
+				
+				if (statement.execute(sql)) {
+					System.out.println("Populate table success");
+					log.logFile(null, "info", "New table is created");
+				}
+				
+			}
+				
+			
+		} catch (Exception e) {
+			
+			log.logFile(e, "severe", e.getMessage());
+		}
 	}
 	
 	public boolean isLogin(String user, String pass) throws SQLException {

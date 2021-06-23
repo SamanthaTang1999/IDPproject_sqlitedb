@@ -26,19 +26,18 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -121,16 +120,18 @@ public class MainInterfaceController implements Initializable {
 	@FXML private TextField tf_newEntry;
 	@FXML private Label	label_listName;
 	@FXML private ListView<String> listView_database;
+	/*
 	@FXML private RadioButton rb_catVaccine;
 	@FXML private RadioButton rb_dogVaccine;
 	@FXML private RadioButton rb_catBreed;
 	@FXML private RadioButton rb_dogBreed;
+	*/
 	@FXML private Button button_viewAllOwners;
 	@FXML private Button button_viewAllPets;
 	@FXML private TableView tb_database;
 	
 	private ObservableList<ObservableList> database_data;
-	 
+	
 	 // Statistics Tab
 	 
 	 private ObservableList piechart_data;
@@ -162,6 +163,7 @@ public class MainInterfaceController implements Initializable {
 		  tabPane.getTabs().remove( user );
 		  tabPane.getTabs().remove( database );
 		  tabPane.getTabs().remove( statistics );
+		 
 		  
 	}
 	
@@ -170,7 +172,7 @@ public class MainInterfaceController implements Initializable {
 	// Get current user in My dash board tab
 	
 	public void getUser(String user) throws SQLException {
-		label_userName.setText("Current User : " + user); 	// set username labal in user profile tab
+		label_userName.setText("Welcome " + user); 	// set username labal in user profile tab
 	}
 	
 	
@@ -250,7 +252,8 @@ public class MainInterfaceController implements Initializable {
 	
 	public void goToSettings(ActionEvent event) 
 	{
-		String userName = label_userName.getText().substring(15);
+		String userName = label_userName.getText().substring(8);
+		
 		if (userName.equals("admin")) {
 			
 			if(!tabPane.getTabs().contains(database)) {
@@ -302,15 +305,15 @@ public class MainInterfaceController implements Initializable {
 			}
 			if (model.getOwnerNumbers() != null) {
 				
-				label_ownerNo.setText("Total Number of Pet Owner : " + Integer.toString(model.getOwnerNumbers()));
+				label_ownerNo.setText(Integer.toString(model.getOwnerNumbers()));
 			}
 			
 			if (model.getAppNumbers(false) != null) {
-				label_appointmentNo.setText("Upcoming Appointments : " + Integer.toString(model.getAppNumbers(false)));
+				label_appointmentNo.setText(Integer.toString(model.getAppNumbers(false)));
 			}
 			
 			if (model.getAppNumbers(true) != null) {
-				label_completeAppNo.setText("Complete Appointments : " + Integer.toString(model.getAppNumbers(true)));
+				label_completeAppNo.setText(Integer.toString(model.getAppNumbers(true)));
 			}
 			
 			
@@ -1590,7 +1593,7 @@ public class MainInterfaceController implements Initializable {
 	
 	public void deleteUser(ActionEvent event) throws SQLException {
 		
-		String userName = label_userName.getText().substring(15);
+		String userName = label_userName.getText().substring(8);
 
 		 Alert alertConfirm = new Alert(AlertType.CONFIRMATION);
 		 alertConfirm.setTitle("Program says");
@@ -1656,47 +1659,58 @@ public class MainInterfaceController implements Initializable {
 	        }
 	}
 	
-	public void selectType(ActionEvent event) {
+	public void generateCatVaccineList(ActionEvent event) {
+		 ObservableList<String> vacCatList;
 		try {
-			
-			if (rb_catVaccine.isSelected()) {
-				 ObservableList<String> vacCatList = model_VacRecord.getVaccineCat();
-				 listView_database.setItems(vacCatList);
-				 label_listName.setText("Cat Vaccine");
-			}
-			
-			else if(rb_dogVaccine.isSelected()) {
-				
-				 ObservableList<String> vacDogList = model_VacRecord.getVaccineDog();
-				 listView_database.setItems(vacDogList);
-				 label_listName.setText("Dog Vaccine");
-			}
-			
-			else if(rb_catBreed.isSelected()) {
-				
-				 ObservableList<String> catBreed = model_breed.getCatBreedList();
-				 listView_database.setItems(catBreed);
-				 label_listName.setText("Cat Breed");
-			}
-			
-			else if(rb_dogBreed.isSelected()) {
-				
-				 ObservableList<String> dogBreed = model_breed.getDogBreedList();
-				 listView_database.setItems(dogBreed);
-				 label_listName.setText("Dog Breed");
-			}
-			
-			else {
-				listView_database.setItems(null);
-			}
+			vacCatList = model_VacRecord.getVaccineCat();
+			 listView_database.setItems(vacCatList);
+			 label_listName.setText("Cat Vaccine");
 			 
-			
-			
-		} catch (Exception e) {
-			 Alert alert = new Alert(AlertType.ERROR);
-				alert.setTitle("Program says");
-				alert.setHeaderText(e.getMessage());
-				alert.show();
+		} catch (SQLException e) {
+			listView_database.setItems(null);
+			log.logFile(e, "severe", e.getMessage());
+		}
+		
+	}
+	
+	public void generateDogVaccineList(ActionEvent event) {
+		 ObservableList<String> vacDogList;
+		try {
+			 vacDogList = model_VacRecord.getVaccineDog();
+			 listView_database.setItems(vacDogList);
+			 label_listName.setText("Dog Vaccine");
+			 
+		} catch (SQLException e) {
+			listView_database.setItems(null);
+			log.logFile(e, "severe", e.getMessage());
+		}
+		
+	}
+	
+	public void generateCatBreedList(ActionEvent event) {
+		 ObservableList<String> catBreed;
+		try {
+			 catBreed = model_breed.getCatBreedList();
+			 listView_database.setItems(catBreed);
+			 label_listName.setText("Cat Breed");
+			 
+		} catch (SQLException e) {
+			listView_database.setItems(null);
+			log.logFile(e, "severe", e.getMessage());
+		}
+		
+	}
+	
+	public void generateDogBreedList(ActionEvent event) {
+		 ObservableList<String> dogBreed;
+		try {
+			 dogBreed = model_breed.getDogBreedList();
+			 listView_database.setItems(dogBreed);
+			 label_listName.setText("Dog Breed");
+			 
+		} catch (SQLException e) {
+			listView_database.setItems(null);
+			log.logFile(e, "severe", e.getMessage());
 		}
 		
 	}
@@ -1715,7 +1729,7 @@ public class MainInterfaceController implements Initializable {
 					return;
 			}
 			
-			if (rb_catVaccine.isSelected()) {
+			if (label_listName.getText().equals("Cat Vaccine")) {
 				
 				if (model.addNewCatVac(newEntry)) {
 					 Alert alert = new Alert(AlertType.INFORMATION);
@@ -1723,15 +1737,15 @@ public class MainInterfaceController implements Initializable {
 						alert.setHeaderText("New Vaccine Added Successfully!");
 						alert.show();
 						tf_newEntry.clear();
-						selectType(event);
-						log.logFile(null, "info", newEntry + " is added successfully");
+						generateCatVaccineList(event);
+						log.logFile(null, "info", newEntry + " is added successfully in cat vaccine list");
 				}
 				else {
-						log.logFile(null, "warning", newEntry + " unable to add vaccine");
+						log.logFile(null, "warning", newEntry + " unable to add vaccine in cat vaccine list");
 				}
 			}
 			
-			else if (rb_dogVaccine.isSelected()) {
+			else if (label_listName.getText().equals("Dog Vaccine")) {
 
 				if (model.addNewDogVac(newEntry)) {
 					 Alert alert = new Alert(AlertType.INFORMATION);
@@ -1739,15 +1753,15 @@ public class MainInterfaceController implements Initializable {
 						alert.setHeaderText("New Vaccine Added Successfully!");
 						alert.show();
 						tf_newEntry.clear();
-						selectType(event);
-						log.logFile(null, "info", newEntry + " is added successfully");
+						generateDogVaccineList(event);
+						log.logFile(null, "info", newEntry + " is added successfully in dog vaccine list.");
 				}
 				else {
-					log.logFile(null, "warning", newEntry + " unable to add vaccine");
+					log.logFile(null, "warning", newEntry + " unable to add vaccine in dog vaccine list.");
 				}
 			}
 			
-			else if(rb_catBreed.isSelected()){
+			else if(label_listName.getText().equals("Cat Breed")){
 				
 				if (model.addNewBreed(newEntry, true)) {
 					 Alert alert = new Alert(AlertType.INFORMATION);
@@ -1755,28 +1769,28 @@ public class MainInterfaceController implements Initializable {
 						alert.setHeaderText("New Breed Added Successfully!");
 						alert.show();
 						tf_newEntry.clear();
-						selectType(event);
-						log.logFile(null, "info", newEntry + " is added successfully");
+						generateCatBreedList(event);
+						log.logFile(null, "info", newEntry + " is added successfully in cat breed list");
 				}
 				else {
-					log.logFile(null, "warning", newEntry + " unable to add breed");
+					log.logFile(null, "warning", newEntry + " unable to add breed in cat breed list");
 				}
 			
 			}
 			
-			else if (rb_dogBreed.isSelected()) {
+			else if (label_listName.getText().equals("Dog Breed")) {
 				if (model.addNewBreed(newEntry, false)) {
 					 Alert alert = new Alert(AlertType.INFORMATION);
 						alert.setTitle("Program says");
 						alert.setHeaderText("New Breed Added Successfully!");
 						alert.show();
 						tf_newEntry.clear();
-						selectType(event);
-						log.logFile(null, "info", newEntry + " is added successfully");
+						generateDogBreedList(event);
+						log.logFile(null, "info", newEntry + " is added successfully in dog breed list");
 				}
 				
 				else {
-					log.logFile(null, "warning", newEntry + " unable to add breed");
+					log.logFile(null, "warning", newEntry + " unable to add breed in dog breed list");
 				}
 			}
 			
@@ -1795,65 +1809,65 @@ public class MainInterfaceController implements Initializable {
 			
 			String delete_item = listView_database.getSelectionModel().getSelectedItem();
 			
-			if (rb_catVaccine.isSelected()) {
+			if (label_listName.getText().equals("Cat Vaccine")) {
 				if (model.deleteCatVac(delete_item)) {
 					 Alert alert = new Alert(AlertType.INFORMATION);
 						alert.setTitle("Program says");
 						alert.setHeaderText("Vaccine is Deleted Successfully!");
 						alert.show();
-						selectType(event);
-						log.logFile(null, "info", delete_item + " deleted successfully");
+						generateCatVaccineList(event);
+						log.logFile(null, "info", delete_item + " deleted successfully in cat vaccine list");
 						
 				}
 				
 				else {
-						log.logFile(null, "warning", delete_item + " unable to delete vaccine");
+						log.logFile(null, "warning", delete_item + " unable to delete vaccine in cat vaccine list");
 				}
 			
 			}
 			
-			else if (rb_dogVaccine.isSelected()) {
+			else if (label_listName.getText().equals("Dog Vaccine")) {
 				if (model.deleteDogVac(delete_item)) {
 					 Alert alert = new Alert(AlertType.INFORMATION);
 						alert.setTitle("Program says");
 						alert.setHeaderText("Vaccine is Deleted Successfully!");
 						alert.show();
-						selectType(event);
-						log.logFile(null, "info", delete_item + " deleted successfully");
+						generateDogVaccineList(event);
+						log.logFile(null, "info", delete_item + " deleted successfully in dog vaccine list.");
 				}
 				
 				else {
-					log.logFile(null, "warning", delete_item + " unable to delete vaccine");
+					log.logFile(null, "warning", delete_item + " unable to delete vaccine in dog vaccine list.");
 				}
 			
 			}
 			
-			else if (rb_catBreed.isSelected()){
+			else if (label_listName.getText().equals("Cat Breed")){
 				if (model.deleteBreed(delete_item, true)) {
 					 Alert alert = new Alert(AlertType.INFORMATION);
 						alert.setTitle("Program says");
 						alert.setHeaderText("Breed is Deleted Successfully!");
 						alert.show();
-						selectType(event);
-						log.logFile(null, "info", delete_item + " deleted successfully");
+						generateCatBreedList(event);
+						log.logFile(null, "info", delete_item + " deleted successfully in cat breed list");
 				}
 				else {
-					log.logFile(null, "warning", delete_item + " unable to delete breed");
+					log.logFile(null, "warning", delete_item + " unable to delete breed in cat breed list");
 				}
 				
 			}
 			
-			else if (rb_dogBreed.isSelected()){
+			else if (label_listName.getText().equals("Dog Breed")){
 				if (model.deleteBreed(delete_item, false)) {
 					 Alert alert = new Alert(AlertType.INFORMATION);
 						alert.setTitle("Program says");
 						alert.setHeaderText("Breed is Deleted Successfully!");
 						alert.show();
-						selectType(event);
-						log.logFile(null, "info", delete_item + " deleted successfully");
+						generateDogBreedList(event);
+						log.logFile(null, "info", delete_item + " deleted successfully in dog breed list.");
 				}
 				else {
-						log.logFile(null, "warning", delete_item + " unable to delete breed.");
+						log.logFile(null, "warning", delete_item + " unable to delete breed in dog breed list.");
 				}
 				
 			}
@@ -1919,7 +1933,7 @@ public class MainInterfaceController implements Initializable {
 	}
 
 	
-	public void viewOwnerTable(ActionEvent event) {
+	public void viewOwnerTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
 		tb_database.getItems().clear();
 		tb_database.getColumns().clear();
 		 ResultSet rs = model.getTable(true);
@@ -1928,7 +1942,7 @@ public class MainInterfaceController implements Initializable {
 	}
 	
 	
-	public void viewPetTable(ActionEvent event) {
+	public void viewPetTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
 		tb_database.getItems().clear();
 		tb_database.getColumns().clear();
 		 ResultSet rs = model.getTable(false);
@@ -1936,15 +1950,14 @@ public class MainInterfaceController implements Initializable {
 		
 	}
 	
-	public void viewVacTable(ActionEvent event) {
+	public void viewVacTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
 		tb_database.getItems().clear();
 		tb_database.getColumns().clear();
 		 ResultSet rs = model.getRecord(true);
 		 getTable(rs);
-		
 	}
 	
-	public void viewMedTable(ActionEvent event) {
+	public void viewMedTable(ActionEvent event) throws NoSuchMethodException, SecurityException {
 		tb_database.getItems().clear();
 		tb_database.getColumns().clear();
 		 ResultSet rs = model.getRecord(false);
@@ -1980,6 +1993,7 @@ public class MainInterfaceController implements Initializable {
          }
 		
 	}
+	
 	
 	
 /////////////////////////////////////////////// STATISTICS TAB ////////////////////////////////////////////////	

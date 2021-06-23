@@ -35,7 +35,7 @@ public class LoginController implements Initializable {
 		if (loginModel.isDbConnected()) {
 			
 			log.logFile(null, "info", "Connected to SQLite database");
-		
+			loginModel.populateTables();
 		}
 		else {
 			
