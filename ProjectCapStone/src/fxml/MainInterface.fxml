@@ -613,7 +613,7 @@
                                                       <Font name="System Bold" size="13.0" />
                                                    </font>
                                                 </JFXButton>
-                                                <JFXButton alignment="CENTER" onAction="#deleteUser" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #3fd2c7; -fx-background-radius: 50;" text="DELETE USER" textFill="WHITE">
+                                                <JFXButton alignment="CENTER" onAction="#deleteUser" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #3fd2c7; -fx-background-radius: 50;" text="DELETE CURRENT USER" textFill="WHITE">
                                                    <VBox.margin>
                                                       <Insets left="50.0" top="10.0" />
                                                    </VBox.margin>
@@ -630,7 +630,7 @@
                                     </AnchorPane>
                                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0">
                                        <children>
-                                          <Label text="Creat Account" textFill="#008ebc">
+                                          <Label text="Create Account" textFill="#008ebc">
                                              <font>
                                                 <Font name="SansSerif Bold" size="24.0" />
                                              </font>
