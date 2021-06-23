@@ -29,11 +29,6 @@ public class LoginModel {
 		}
 		
 	}
-	// need to create other tables like users, vaccine_cat/dog, breed_cats/dog, and etc
-	// need to add default user "admin, 1"
-	// need to add credential email and password
-	// need to populate vaccine and breed tables
-	// add more items if needed, things that I may miss
 	
 	public void populateTables() {
 		System.out.println("Populate table");
