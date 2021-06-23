@@ -6494,3 +6494,78 @@ INFO: Database Reset Successful.
 Jun 23, 2021 7:14:59 PM common.Log logFile
 INFO: Database Reset Successful.
 
+Jun 23, 2021 8:52:42 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 23, 2021 8:52:47 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 23, 2021 8:53:26 PM common.Log logFile
+INFO: Samantha Tang is registered into database.
+
+Jun 23, 2021 8:53:40 PM common.Log logFile
+INFO: hoho the Dog is registered into database.
+
+Jun 23, 2021 8:53:56 PM common.Log logFile
+INFO: grgrg the Others is registered into database.
+
+Jun 23, 2021 8:54:19 PM common.Log logFile
+INFO: Pet ID : 1 vaccination record is added into database.
+
+Jun 23, 2021 8:54:19 PM common.Log logFile
+INFO: Samantha Tang's hoho is scheduled  for 2nd injection 6 in 1 on 2021-07-23
+
+Jun 23, 2021 8:54:26 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 23, 2021 8:54:30 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 23, 2021 8:54:38 PM common.Log logFile
+INFO: Database Reset Successful.
+
+Jun 23, 2021 8:55:48 PM common.Log logFile
+INFO: Samantha Tang is registered into database.
+
+Jun 23, 2021 8:56:54 PM common.Log logFile
+INFO: Gigi the Cat is registered into database.
+
+Jun 23, 2021 8:57:06 PM common.Log logFile
+INFO: Pet ID : 1 vaccination record is added into database.
+
+Jun 23, 2021 8:57:06 PM common.Log logFile
+INFO: Samantha Tang's Gigi is scheduled  for 2nd injection 5 in 1 on 2021-07-23
+
+Jun 23, 2021 8:57:34 PM common.Log logFile
+INFO: Appointment date is updated
+
+Jun 23, 2021 8:57:56 PM common.Log logFile
+INFO: Reminder email is sent
+
+Jun 23, 2021 8:58:28 PM common.Log logFile
+INFO: Appointment is completed
+
+Jun 23, 2021 9:00:41 PM common.Log logFile
+INFO: jojo the Dog is registered into database.
+
+Jun 23, 2021 9:00:51 PM common.Log logFile
+INFO: Pet ID : 2 vaccination record is added into database.
+
+Jun 23, 2021 9:00:51 PM common.Log logFile
+INFO: Samantha Tang's jojo is scheduled  for 3rd & Above injection 8 in 1 on 2022-06-23
+
+Jun 23, 2021 9:01:35 PM common.Log logFile
+INFO: Connected to SQLite database
+
+Jun 23, 2021 9:01:43 PM common.Log logFile
+INFO: admin log in successfully.
+
+Jun 23, 2021 9:01:56 PM common.Log logFile
+INFO: Appointment date is updated
+
+Jun 23, 2021 9:02:51 PM common.Log logFile
+INFO: Database Reset Successful.
+
+Jun 23, 2021 9:03:04 PM common.Log logFile
+INFO: Connected to SQLite database
+
